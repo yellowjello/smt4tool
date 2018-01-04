@@ -1216,7 +1216,7 @@ registerSkill({
 	"hit": "-",
 	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "Severe Force attack. Target: Multi-enemies"
+	"effect": "Severe Force attack. Target: 1 enemy"
 });
 
 registerSkill({
