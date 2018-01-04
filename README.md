@@ -22,3 +22,5 @@ If you want to run this yourself, just clone it and open the index.html file. (Y
 Thank you [Erikku](https://github.com/erikku/), the original creator of this tool. Unfortunately, they do not seem to be maintaining the project anymore, so I had to fork it.
 
 I have also gotten bug fixes from rustinlee and Nephthysred from their forks of the project.
+
+I have also used the fusion chart data from https://github.com/aqiu384/megaten-fusion-tool to fix errors in the original fusion chart.
