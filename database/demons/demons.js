@@ -1424,8 +1424,8 @@ registerDemon({
 		"hp": 108,
 		"mp": 104,
 		"strength": 17,
-		"skill": 23,
-		"magic": 19,
+		"skill": 19,
+		"magic": 23,
 		"speed": 16,
 		"luck": 22
 	},
@@ -2033,8 +2033,8 @@ registerDemon({
 		"hp": 445,
 		"mp": 88,
 		"strength": 53,
-		"skill": 37,
-		"magic": 47,
+		"skill": 47,
+		"magic": 37,
 		"speed": 43,
 		"luck": 35
 	},
@@ -2646,8 +2646,8 @@ registerDemon({
 		"hp": 287,
 		"mp": 278,
 		"strength": 49,
-		"skill": 71,
-		"magic": 55,
+		"skill": 55,
+		"magic": 71,
 		"speed": 47,
 		"luck": 66
 	},
@@ -3425,8 +3425,8 @@ registerDemon({
 		"hp": 719,
 		"mp": 143,
 		"strength": 90,
-		"skill": 62,
-		"magic": 79,
+		"skill": 79,
+		"magic": 62,
 		"speed": 72,
 		"luck": 59
 	},
@@ -4879,7 +4879,7 @@ registerDemon({
 		"skill": 19,
 		"magic": 23,
 		"speed": 16,
-		"luck": 12
+		"luck": 22
 	},
 	"affinity": {
 		"physical": "-",
@@ -5929,8 +5929,8 @@ registerDemon({
 		"hp": 99,
 		"mp": 94,
 		"strength": 15,
-		"skill": 21,
-		"magic": 17,
+		"skill": 17,
+		"magic": 21,
 		"speed": 15,
 		"luck": 20
 	},
@@ -8201,8 +8201,8 @@ registerDemon({
 		"hp": 197,
 		"mp": 190,
 		"strength": 33,
-		"skill": 47,
-		"magic": 37,
+		"skill": 37,
+		"magic": 47,
 		"speed": 31,
 		"luck": 44
 	},
@@ -10647,8 +10647,8 @@ registerDemon({
 		"hp": 315,
 		"mp": 306,
 		"strength": 54,
-		"skill": 78,
-		"magic": 60,
+		"skill": 60,
+		"magic": 78,
 		"speed": 51,
 		"luck": 72
 	},
@@ -10685,8 +10685,8 @@ registerDemon({
 		"hp": 277,
 		"mp": 269,
 		"strength": 48,
-		"skill": 68,
-		"magic": 53,
+		"skill": 53,
+		"magic": 68,
 		"speed": 45,
 		"luck": 63
 	},
@@ -11885,8 +11885,8 @@ registerDemon({
 		"hp": 202,
 		"mp": 235,
 		"strength": 34,
-		"skill": 48,
-		"magic": 38,
+		"skill": 38,
+		"magic": 48,
 		"speed": 32,
 		"luck": 45
 	},
@@ -12641,8 +12641,8 @@ registerDemon({
 		"hp": 127,
 		"mp": 122,
 		"strength": 20,
-		"skill": 28,
-		"magic": 22,
+		"skill": 22,
+		"magic": 28,
 		"speed": 19,
 		"luck": 26
 	},
@@ -12943,8 +12943,8 @@ registerDemon({
 		"hp": 567,
 		"mp": 112,
 		"strength": 70,
-		"skill": 49,
-		"magic": 62,
+		"skill": 62,
+		"magic": 49,
 		"speed": 56,
 		"luck": 46
 	},
@@ -12980,8 +12980,8 @@ registerDemon({
 		"hp": 315,
 		"mp": 306,
 		"strength": 54,
-		"skill": 78,
-		"magic": 60,
+		"skill": 60,
+		"magic": 78,
 		"speed": 51,
 		"luck": 72
 	},
@@ -14767,8 +14767,8 @@ registerDemon({
 		"hp": 719,
 		"mp": 143,
 		"strength": 90,
-		"skill": 62,
-		"magic": 79,
+		"skill": 79,
+		"magic": 62,
 		"speed": 72,
 		"luck": 59
 	},
@@ -16047,11 +16047,11 @@ registerDemon({
 	"stats": {
 		"hp": 455,
 		"mp": 103,
-		"strength": 60,
-		"skill": 41,
-		"magic": 53,
-		"speed": 48,
-		"luck": 39
+		"strength": 63,
+		"skill": 56,
+		"magic": 44,
+		"speed": 51,
+		"luck": 42
 	},
 	"affinity": {
 		"physical": "protect",
