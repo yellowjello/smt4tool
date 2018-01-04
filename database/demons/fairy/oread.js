@@ -11,7 +11,7 @@ registerDemon({
 		"skill": 19,
 		"magic": 23,
 		"speed": 16,
-		"luck": 12
+		"luck": 22
 	},
 	"affinity": {
 		"physical": "-",

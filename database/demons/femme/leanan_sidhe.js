@@ -8,8 +8,8 @@ registerDemon({
 		"hp": 99,
 		"mp": 94,
 		"strength": 15,
-		"skill": 21,
-		"magic": 17,
+		"skill": 17,
+		"magic": 21,
 		"speed": 15,
 		"luck": 20
 	},

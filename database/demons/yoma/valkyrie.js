@@ -7,11 +7,11 @@ registerDemon({
 	"stats": {
 		"hp": 455,
 		"mp": 103,
-		"strength": 60,
-		"skill": 41,
-		"magic": 53,
-		"speed": 48,
-		"luck": 39
+		"strength": 63,
+		"skill": 56,
+		"magic": 44,
+		"speed": 51,
+		"luck": 42
 	},
 	"affinity": {
 		"physical": "protect",
