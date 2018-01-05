@@ -633,7 +633,6 @@ function compHistory(index) {
 		dialogClass: "no-close",
 		closeOnEscape: true,
 		resizable: false,
-		width: 700,
 		height: 380,
 		modal: true,
 		buttons: {
@@ -724,7 +723,6 @@ function compSplit(index) {
 			dialogClass: "no-close",
 			closeOnEscape: true,
 			resizable: false,
-			width: 700,
 			height: 380,
 			modal: true,
 			buttons: {
