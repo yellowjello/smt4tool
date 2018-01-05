@@ -152,6 +152,7 @@ body {
 	padding: 5px;
 }
 
+#demonData_name, #demonData_tribe,
 #demonData_level, #demonData_hp, #demonData_mp, #demonData_str,
 #demonData_skill, #demonData_magic, #demonData_speed, #demonData_luck,
 #demonData_physical, #demonData_gun, #demonData_fire, #demonData_ice,
@@ -160,10 +161,7 @@ body {
 #demonData_poison, #skillData_name, #skillData_cost {
 	display: inline-block;
 	width: 40px;
-}
-
-#skillData td, #appData td {
-	white-space: nowrap;
+	padding-left:3px;
 }
 
 #demonData_name, #demonData_tribe, #skillData_attribute {
@@ -171,7 +169,7 @@ body {
 }
 
 #skillData_effect, #skillData_notes {
-	width: 300px;
+	max-width: 300px;
 	display: inline-block;
 }
 
@@ -245,7 +243,7 @@ body {
 	border: 1px solid #c9c9c9;
 	display: inline-block;
 	padding: 6px 6px;
-	width: 500px;
+	max-width: 500px;
 }
 
 #walkthrough table.quest td.questCat {
@@ -254,7 +252,7 @@ body {
 }
 
 #walkthrough {
-	width: 760px;
+	max-width: 760px;
 }
 
 .compEntry, .compCombo {
@@ -268,7 +266,7 @@ body {
 }
 
 .compEntry {
-	width: 650px;
+	max-width: 650px;
 }
 
 .compCombo {
@@ -309,4 +307,13 @@ body {
 
 img.map {
 	padding: 8px;
+}
+
+#demonData {
+	max-width: 540px;
+}
+
+.adjusTable div {
+	display: inline-block;
+	padding-bottom: 3px;
 }
