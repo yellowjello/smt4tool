@@ -315,5 +315,9 @@ img.map {
 
 .adjusTable div {
 	display: inline-block;
-	padding-bottom: 3px;
+	padding-bottom: 5px;
+}
+
+#tribeList {
+	max-width: 900px;
 }
