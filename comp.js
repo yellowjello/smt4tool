@@ -216,7 +216,7 @@ function computeFusions() {
 	var fuseList = [ ];
 
 	// Handle all special fusions.
-	if(compList.length >= 3) {
+	if(compList.length >= 2) {
 		$.each(demonByNameEN, function(nameEN, data) {
 			if(data["fusions"] && data["fusions"].length) {
 				var haveFusion = true;
@@ -241,8 +241,10 @@ function computeFusions() {
 					});
 
 					html = html.substring(0, html.length - 7) + "=&nbsp;";
-					html += "<a class=\"section\">" + data.nameEN + " (" +
+					var nameHTML = "<a class=\"section\">" + data.nameEN + " (" +
 						data.level + ")</a>";
+					if ("dlc" in data) nameHTML = "<span class='dlcIndicator'>" + nameHTML + "</span>";
+					html += nameHTML;
 					html += "</div>";
 
 					fuseList.push({"html": html});
@@ -525,7 +527,7 @@ function refleshCOMP() {
 		html += "<a class=\"button_up\" id=\"compLevelBtn\" onClick=\"" +
 			"compLevel(" + index + ");\">Level</a>";
 
-		if(baseDemon.fusions || (reverseChart[baseDemon.tribe] &&
+		if((baseDemon.fusions && baseDemon.fusions.length > 0)|| (reverseChart[baseDemon.tribe] &&
 			reverseChart[baseDemon.tribe].length)) {
 				html += "<a class=\"button_up\" id=\"compSplitBtn\" " +
 					"onClick=\"compSplit(" + index + ");\">Split</a>";

@@ -32,5 +32,6 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"バインドクロー": 0,
 		"吸血": 0
-	}
+	},
+	"fusions": []
 });
