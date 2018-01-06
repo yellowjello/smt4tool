@@ -1,25 +1,25 @@
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "妖鬼",
-	"nameJP": "ヤクシャ",
-	"nameEN": "Yaksa",
-	"level": 70,
+	"tribe": "地霊",
+	"nameJP": "トラルテクトリ",
+	"nameEN": "Tlaltecuhtli",
+	"level": 46,
 	"stats": {
-		"hp": 756,
-		"mp": 151,
-		"strength": 95,
-		"skill": 84,
-		"magic": 66,
-		"speed": 76,
-		"luck": 62
+		"hp": 530,
+		"mp": 104,
+		"strength": 45,
+		"skill": 50,
+		"magic": 65,
+		"speed": 43,
+		"luck": 60
 	},
 	"affinity": {
 		"physical": "protect",
 		"gun": "-",
 		"fire": "-",
-		"ice": "reflect",
-		"thunder": "-",
-		"shock": "weak",
+		"ice": "weak",
+		"thunder": "absorb",
+		"shock": "-",
 		"banish": "-",
 		"curse": "-",
 		"bind": "-",
@@ -30,9 +30,9 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"メパトラ": 0,
-		"タルカジャ": 0,
-		"怪力乱神": 71,
-		"銃ギガプレロマ": 72
+		"メギド": 0,
+		"マハジオンガ": 0,
+		"アギダイン": 47,
+		"氷結無効": 48
 	}
 });

@@ -1,25 +1,25 @@
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "魔神",
-	"nameJP": "ナントセイクン",
-	"nameEN": "Nan Dou",
-	"level": 48,
+	"tribe": "堕天使",
+	"nameJP": "ミスラ",
+	"nameEN": "Mitra",
+	"level": 53,
 	"stats": {
-		"hp": 549,
-		"mp": 108,
-		"strength": 67,
-		"skill": 60,
-		"magic": 47,
-		"speed": 54,
-		"luck": 44
+		"hp": 441,
+		"mp": 198,
+		"strength": 59,
+		"skill": 59,
+		"magic": 59,
+		"speed": 59,
+		"luck": 59
 	},
 	"affinity": {
 		"physical": "-",
 		"gun": "-",
-		"fire": "null",
-		"ice": "weak",
+		"fire": "protect",
+		"ice": "protect",
 		"thunder": "-",
-		"shock": "-",
+		"shock": "weak",
 		"banish": "null",
 		"curse": "null",
 		"bind": "-",
@@ -30,8 +30,8 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"マハラギダイン": 0,
-		"怪力乱神": 49,
-		"サマリカーム": 50
+		"ハマオン": 0,
+		"モータルジハード": 0,
+		"勝利の息吹": 54
 	}
 });

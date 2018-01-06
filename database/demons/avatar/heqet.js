@@ -1,36 +1,41 @@
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "妖虫",
-	"nameJP": "ミルメコレオ",
-	"nameEN": "Myrmecoleon",
+	"tribe": "聖獣",
+	"nameJP": "ヘケト",
+	"nameEN": "Heqet",
 	"level": 3,
 	"stats": {
-		"hp": 123,
-		"mp": 23,
-		"strength": 11,
-		"skill": 10,
+		"hp": 91,
+		"mp": 40,
+		"strength": 9,
+		"skill": 9,
 		"magic": 9,
 		"speed": 9,
-		"luck": 8
+		"luck": 9
 	},
 	"affinity": {
 		"physical": "-",
 		"gun": "-",
-		"fire": "-",
+		"fire": "protect",
 		"ice": "-",
-		"thunder": "weak",
-		"shock": "-",
+		"thunder": "-",
+		"shock": "weak",
 		"banish": "-",
 		"curse": "-",
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "null"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"パトラ": 0,
-		"吸血": 4
+		"道具の知恵・癒": 0,
+		"ジオ": 0,
+		"ポズムディ": 4
+	},
+	"mutate": {
+		"level": 11,
+		"target": "ズェラロンズ"
 	}
 });

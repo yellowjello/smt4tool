@@ -1,37 +1,36 @@
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "邪鬼",
-	"nameJP": "ヘカトンケイル",
-	"nameEN": "Hecatoncheir",
-	"level": 70,
+	"tribe": "魔獣",
+	"nameJP": "グリフォン",
+	"nameEN": "Gryphon",
+	"level": 3,
 	"stats": {
-		"hp": 756,
-		"mp": 151,
-		"strength": 95,
-		"skill": 84,
-		"magic": 66,
-		"speed": 76,
-		"luck": 62
+		"hp": 123,
+		"mp": 23,
+		"strength": 9,
+		"skill": 9,
+		"magic": 9,
+		"speed": 11,
+		"luck": 9
 	},
 	"affinity": {
-		"physical": "protect",
-		"gun": "protect",
+		"physical": "-",
+		"gun": "weak",
 		"fire": "-",
 		"ice": "-",
 		"thunder": "-",
-		"shock": "weak",
+		"shock": "null",
 		"banish": "-",
 		"curse": "-",
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "-"
+		"poison": "weak"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"ラクカジャ": 0,
-		"冥界破": 0,
-		"雄叫び": 71
+		"バウンスクロー": 0,
+		"突撃": 5
 	}
 });

@@ -2,7 +2,7 @@ registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
 	"tribe": "大天使",
 	"nameJP": "マンセマット",
-	"nameEN": "Matsema",
+	"nameEN": "Mastema",
 	"level": 75,
 	"stats": {
 		"hp": 399,

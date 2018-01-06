@@ -1,36 +1,36 @@
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "魔獣",
-	"nameJP": "グリフォン",
-	"nameEN": "Griffon",
+	"tribe": "妖虫",
+	"nameJP": "ミルメコレオ",
+	"nameEN": "Myrmecolion",
 	"level": 3,
 	"stats": {
 		"hp": 123,
 		"mp": 23,
-		"strength": 9,
-		"skill": 9,
+		"strength": 11,
+		"skill": 10,
 		"magic": 9,
-		"speed": 11,
-		"luck": 9
+		"speed": 9,
+		"luck": 8
 	},
 	"affinity": {
 		"physical": "-",
-		"gun": "weak",
+		"gun": "-",
 		"fire": "-",
 		"ice": "-",
-		"thunder": "-",
-		"shock": "null",
+		"thunder": "weak",
+		"shock": "-",
 		"banish": "-",
 		"curse": "-",
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
 		"confusion": "-",
-		"poison": "weak"
+		"poison": "-"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"バウンスクロー": 0,
-		"突撃": 5
+		"パトラ": 0,
+		"吸血": 4
 	}
 });

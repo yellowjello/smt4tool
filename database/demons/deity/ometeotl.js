@@ -1,27 +1,27 @@
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "堕天使",
-	"nameJP": "ダンタリアン",
-	"nameEN": "Dantalion",
-	"level": 32,
+	"tribe": "魔神",
+	"nameJP": "オメテオトル",
+	"nameEN": "Ometeotl",
+	"level": 59,
 	"stats": {
-		"hp": 197,
-		"mp": 190,
-		"strength": 33,
-		"skill": 37,
-		"magic": 47,
-		"speed": 31,
-		"luck": 44
+		"hp": 324,
+		"mp": 315,
+		"strength": 56,
+		"skill": 62,
+		"magic": 81,
+		"speed": 53,
+		"luck": 75
 	},
 	"affinity": {
 		"physical": "-",
 		"gun": "-",
 		"fire": "protect",
 		"ice": "protect",
-		"thunder": "weak",
-		"shock": "null",
-		"banish": "-",
-		"curse": "protect",
+		"thunder": "-",
+		"shock": "-",
+		"banish": "null",
+		"curse": "null",
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
@@ -30,8 +30,8 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"マハザンマ": 0,
-		"テトラカーン": 0,
-		"マカラカーン": 34
+		"アギダイン": 0,
+		"リカームドラ": 0,
+		"ブフダイン": 61
 	}
 });

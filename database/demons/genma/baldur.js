@@ -1,24 +1,24 @@
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "地霊",
-	"nameJP": "トラルテクトリ",
-	"nameEN": "Tlaltechuhtli",
-	"level": 46,
+	"tribe": "幻魔",
+	"nameJP": "バルドル",
+	"nameEN": "Baldur",
+	"level": 29,
 	"stats": {
-		"hp": 530,
-		"mp": 104,
-		"strength": 45,
-		"skill": 50,
-		"magic": 65,
-		"speed": 43,
-		"luck": 60
+		"hp": 273,
+		"mp": 121,
+		"strength": 35,
+		"skill": 32,
+		"magic": 32,
+		"speed": 42,
+		"luck": 35
 	},
 	"affinity": {
 		"physical": "protect",
-		"gun": "-",
+		"gun": "weak",
 		"fire": "-",
-		"ice": "weak",
-		"thunder": "absorb",
+		"ice": "-",
+		"thunder": "null",
 		"shock": "-",
 		"banish": "-",
 		"curse": "-",
@@ -30,9 +30,9 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"メギド": 0,
-		"マハジオンガ": 0,
-		"アギダイン": 47,
-		"氷結無効": 48
+		"ハマオン": 0,
+		"成仏拳": 0,
+		"破魔耐性": 30,
+		"慈愛の反撃": 32
 	}
 });

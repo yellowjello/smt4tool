@@ -1,23 +1,23 @@
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "妖魔",
-	"nameJP": "マスターテリオン",
-	"nameEN": "Terion",
-	"level": 61,
+	"tribe": "夜魔",
+	"nameJP": "ワイルド・ハント",
+	"nameEN": "Wild Hunt",
+	"level": 53,
 	"stats": {
-		"hp": 497,
-		"mp": 223,
-		"strength": 67,
-		"skill": 67,
-		"magic": 67,
-		"speed": 67,
-		"luck": 67
+		"hp": 596,
+		"mp": 118,
+		"strength": 73,
+		"skill": 65,
+		"magic": 51,
+		"speed": 59,
+		"luck": 48
 	},
 	"affinity": {
 		"physical": "-",
 		"gun": "-",
-		"fire": "null",
-		"ice": "null",
+		"fire": "-",
+		"ice": "-",
 		"thunder": "-",
 		"shock": "-",
 		"banish": "weak",
@@ -30,8 +30,12 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"パンデミアブーム": 0,
-		"アギダイン": 0,
-		"コンセントレイト": 62
+		"ブラストアロー": 0,
+		"成仏拳": 0,
+		"三分の魔脈": 56
+	},
+	"mutate": {
+		"level": 58,
+		"target": "アバドン"
 	}
 });

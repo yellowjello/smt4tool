@@ -1,21 +1,21 @@
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "神樹",
-	"nameJP": "マヤウェル",
-	"nameEN": "Mavahuel",
-	"level": 35,
+	"tribe": "外道",
+	"nameJP": "ジャック・リパー",
+	"nameEN": "Jack the Ripper",
+	"level": 9,
 	"stats": {
-		"hp": 212,
-		"mp": 205,
-		"strength": 36,
-		"skill": 40,
-		"magic": 51,
-		"speed": 34,
-		"luck": 47
+		"hp": 133,
+		"mp": 58,
+		"strength": 15,
+		"skill": 14,
+		"magic": 14,
+		"speed": 18,
+		"luck": 15
 	},
 	"affinity": {
 		"physical": "-",
-		"gun": "null",
+		"gun": "-",
 		"fire": "weak",
 		"ice": "-",
 		"thunder": "-",
@@ -24,15 +24,14 @@ registerDemon({
 		"curse": "-",
 		"bind": "-",
 		"sleep": "-",
-		"cold": "-",
+		"cold": "protect",
 		"confusion": "-",
 		"poison": "-"
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"メディア": 0,
-		"メパトラ": 0,
-		"回復プレロマ": 36,
-		"回復ギガプレロマ": 37
+		"テタノスカット": 0,
+		"呪殺耐性": 10,
+		"勝利の小息吹": 12
 	}
 });
