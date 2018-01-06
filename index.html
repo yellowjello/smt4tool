@@ -18,7 +18,10 @@
 	<script src="database/demons/demons.js"></script>
 	<!-- <script src="database/demons/reverse_cache.js"></script> -->
 	<script src="comp.js"></script>
-	<!-- <script src="debug.js"></script>-->
+<!--
+	<script src="database/demons/demon-reference.js"></script>
+	<script src="debug.js"></script>
+-->
 	<script>
 	$(document).ready(function(){
 		// Set jquery.cookie to use JSON.
@@ -31,6 +34,7 @@
 		
 		//verifyChart();
 		//printChartCode();
+		//verifyDemons();
 
 		// Hide these by default.
 		$("#demonList").hide();
@@ -154,7 +158,7 @@
 <div id="demonTab">
 	<div class="adjusTable">
 		<div><a id="tribeListBtn" class="button_up"
-			onClick="restoreTribeList();">Tribe List</a></div>
+			onClick="restoreTribeList();">Race List</a></div>
 		<div><a id="showAllDemonsBtn" class="button_up"
 			onClick="showAllDemons();">Show All</a></div>
 		<div><a id="affinityFilterBtn" class="button_up"
@@ -172,7 +176,7 @@
 			<div><a class="section">Name</a><a id="demonData_name">Unknown IV</a></div>
 			<br>
 			<div>
-				<a class="section">Tribe</a>
+				<a class="section">Race</a>
 				<a id="demonData_tribe">Unknown</a>
 			</div>
 			<br>

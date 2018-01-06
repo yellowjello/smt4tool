@@ -1,25 +1,25 @@
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "幻魔",
-	"nameJP": "バルドル",
-	"nameEN": "Beldr",
-	"level": 29,
+	"tribe": "妖鳥",
+	"nameJP": "タイホウ",
+	"nameEN": "Da Peng",
+	"level": 57,
 	"stats": {
-		"hp": 273,
-		"mp": 121,
-		"strength": 35,
-		"skill": 32,
-		"magic": 32,
-		"speed": 42,
-		"luck": 35
+		"hp": 634,
+		"mp": 126,
+		"strength": 78,
+		"skill": 69,
+		"magic": 54,
+		"speed": 63,
+		"luck": 51
 	},
 	"affinity": {
-		"physical": "protect",
+		"physical": "-",
 		"gun": "weak",
 		"fire": "-",
 		"ice": "-",
-		"thunder": "null",
-		"shock": "-",
+		"thunder": "-",
+		"shock": "absorb",
 		"banish": "-",
 		"curse": "-",
 		"bind": "-",
@@ -30,9 +30,8 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"ハマオン": 0,
-		"成仏拳": 0,
-		"破魔耐性": 30,
-		"慈愛の反撃": 32
+		"ザンダイン": 0,
+		"パニックボイス": 0,
+		"マハブフーラ": 58
 	}
 });

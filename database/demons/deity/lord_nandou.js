@@ -1,27 +1,27 @@
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "霊鳥",
-	"nameJP": "スザク",
-	"nameEN": "Suzaku",
-	"level": 52,
+	"tribe": "魔神",
+	"nameJP": "ナントセイクン",
+	"nameEN": "Lord Nandou",
+	"level": 48,
 	"stats": {
-		"hp": 291,
-		"mp": 283,
-		"strength": 50,
-		"skill": 56,
-		"magic": 72,
-		"speed": 47,
-		"luck": 67
+		"hp": 549,
+		"mp": 108,
+		"strength": 67,
+		"skill": 60,
+		"magic": 47,
+		"speed": 54,
+		"luck": 44
 	},
 	"affinity": {
 		"physical": "-",
-		"gun": "weak",
+		"gun": "-",
 		"fire": "null",
 		"ice": "weak",
 		"thunder": "-",
 		"shock": "-",
 		"banish": "null",
-		"curse": "protect",
+		"curse": "null",
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
@@ -30,8 +30,8 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"ファイアブレス": 0,
-		"火炎ギガプレロマ": 0,
-		"アギダイン": 53
+		"マハラギダイン": 0,
+		"怪力乱神": 49,
+		"サマリカーム": 50
 	}
 });

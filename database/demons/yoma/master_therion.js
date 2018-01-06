@@ -1,23 +1,23 @@
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "夜魔",
-	"nameJP": "ワイルド・ハント",
-	"nameEN": "Wild Haunt",
-	"level": 53,
+	"tribe": "妖魔",
+	"nameJP": "マスターテリオン",
+	"nameEN": "Master Therion",
+	"level": 61,
 	"stats": {
-		"hp": 596,
-		"mp": 118,
-		"strength": 73,
-		"skill": 65,
-		"magic": 51,
-		"speed": 59,
-		"luck": 48
+		"hp": 497,
+		"mp": 223,
+		"strength": 67,
+		"skill": 67,
+		"magic": 67,
+		"speed": 67,
+		"luck": 67
 	},
 	"affinity": {
 		"physical": "-",
 		"gun": "-",
-		"fire": "-",
-		"ice": "-",
+		"fire": "null",
+		"ice": "null",
 		"thunder": "-",
 		"shock": "-",
 		"banish": "weak",
@@ -30,12 +30,8 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"ブラストアロー": 0,
-		"成仏拳": 0,
-		"三分の魔脈": 56
-	},
-	"mutate": {
-		"level": 58,
-		"target": "アバドン"
+		"パンデミアブーム": 0,
+		"アギダイン": 0,
+		"コンセントレイト": 62
 	}
 });

@@ -1,27 +1,27 @@
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
-	"tribe": "妖鳥",
-	"nameJP": "タイホウ",
-	"nameEN": "Da Pengm",
-	"level": 57,
+	"tribe": "外道",
+	"nameJP": "タトゥーマン",
+	"nameEN": "Tattooed Man",
+	"level": 25,
 	"stats": {
-		"hp": 634,
-		"mp": 126,
-		"strength": 78,
-		"skill": 69,
-		"magic": 54,
-		"speed": 63,
-		"luck": 51
+		"hp": 290,
+		"mp": 66,
+		"strength": 35,
+		"skill": 31,
+		"magic": 24,
+		"speed": 28,
+		"luck": 23
 	},
 	"affinity": {
 		"physical": "-",
-		"gun": "weak",
+		"gun": "-",
 		"fire": "-",
 		"ice": "-",
 		"thunder": "-",
-		"shock": "absorb",
-		"banish": "-",
-		"curse": "-",
+		"shock": "-",
+		"banish": "null",
+		"curse": "weak",
 		"bind": "-",
 		"sleep": "-",
 		"cold": "-",
@@ -30,8 +30,9 @@ registerDemon({
 	},
 	"skills": {
 		// This is a mapping for skill information, must stay in Japanese.
-		"ザンダイン": 0,
-		"パニックボイス": 0,
-		"マハブフーラ": 58
+		"挑発": 0,
+		"絶命剣": 0,
+		"ヒートウェイブ": 26,
+		"反撃": 28
 	}
 });

@@ -1,5 +1,5 @@
 $('#walkthrough').html(walkthroughHeader("intro", undefined) + "<h1>Training Exercise</h1>" +
-"<h2>Demons Seen Here</h2>" + demonQuickList(["Centaur", "Fuxi", "Lham Dearg", "Mokoi", "Napaea", "Slime", "Griffon", "Chagrin", "Myrmecoleon"]) +
+"<h2>Demons Seen Here</h2>" + demonQuickList(["Centaur", "Fuxi", "Lham Dearg", "Mokoi", "Napaea", "Slime", "Gryphon", "Chagrin", "Myrmecolion"]) +
 htmlQuest({
 	"name": "Training Exercise I",
 	"stars": 1,
