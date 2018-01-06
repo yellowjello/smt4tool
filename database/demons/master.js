@@ -45,6 +45,17 @@ elementalRanks = ["------du", "------ud", "----du--", "----ud--", "udud----",
 	"--------", "--------", "--------", "--------", "--------"];
 elementalRankers = ["アーシーズ", "エアロス", "アクアンズ", "フレイミーズ", "ノーム",
 	"シルフ", "ウンディーネ", "サラマンダー"];
+	
+dlcNameJPToEN = {
+	"地獄の沙汰もレベル次第": "Experience of the Afterlife",
+	"地獄の沙汰もマッカ次第": "Underworld Money-Maker",
+	"地獄の沙汰もアプリ次第": "Death Has Its Applications",
+	"大天使の羽を折れ１": "Clipped Wings 1",
+	"大天使の羽を折れ２": "Clipped Wings 2",
+	"日の老いたる者": "Ancient One of the Sun",
+	"永遠の若者": "The Eternal Youth",
+	"東京に未来を": "For the Past… For the Future"
+}
 
 demonNamesEN = [ ];
 demonByNameJP = { };
@@ -264,8 +275,11 @@ function showDemon(name) {
 
 	var data = demonByNameEN[name];
 	currentDemon = data;
+	
+	nameHtml = data.nameEN;
+	if ("dlc" in data) nameHtml += " <span class='dlcIndicator'>(DLC)</span>";
 
-	$("#demonData_name").text(data.nameEN);
+	$("#demonData_name").html(nameHtml);
 	$("#demonData_tribe").text(tribeListEN[tribeListJP.indexOf(data.tribe)]);
 	$("#demonData_level").text(data.level);
 	$("#demonData_hp").text(data.stats.hp);
@@ -337,6 +351,21 @@ function showDemon(name) {
 	});
 
 	$("#demonData_skills").html(skillList);
+	
+	if ("dlc" in data) {
+		$("#demonData_dlcSection").show();
+		
+		var dlcHtml = "";
+		
+		for (let dlcName of data.dlc) {
+			if (dlcHtml.length != 0) dlcHtml += ", ";
+			dlcHtml += dlcNameJPToEN[dlcName];
+		}
+		
+		$("#demonData_dlc").html(dlcHtml);
+	} else {
+		$("#demonData_dlcSection").hide();
+	}
 
 	if(data["fusions"]) {
 		$("#demonData_fusionSection").show();
@@ -508,7 +537,10 @@ function demonTableEntry(data, targetLevel) {
 	}
 
 	demonList += "<td><a class=\"demonLink\" onClick=\"demonClicked(this);\">" +
-		data.nameEN + "</a></td>";
+		data.nameEN + "</a>";
+	if ("dlc" in data) demonList += " <span class='dlcIndicator'>(DLC)</span>";
+	demonList += "</td>";
+	
 	demonList += "<td>" + data.stats.hp + "</td>";
 	demonList += "<td>" + data.stats.mp + "</td>";
 	demonList += "<td>" + data.stats.strength + "</td>";

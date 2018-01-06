@@ -10001,7 +10001,8 @@ registerDemon({
 	},
 	"fusions": [
 		["モラクス", "ライジュウ", "ハルパス"]
-	]
+	],
+	"dlc": ["地獄の沙汰もマッカ次第"]
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -13758,7 +13759,8 @@ registerDemon({
 	},
 	"fusions": [
 		["ナパイア", "エアロス", "ペレ"]
-	]
+	],
+	"dlc": ["地獄の沙汰もレベル次第"]
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -15322,7 +15324,8 @@ registerDemon({
 	},
 	"fusions": [
 		["フレイミーズ", "モスマン", "グレムリン"]
-	]
+	],
+	"dlc": ["地獄の沙汰もアプリ次第"]
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -17546,7 +17549,8 @@ registerDemon({
 	},
 	"fusions": [
 		["アプスー", "ライラ", "ダイアナ"]
-	]
+	],
+	"dlc": ["大天使の羽を折れ２"]
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -17799,7 +17803,8 @@ registerDemon({
 	},
 	"fusions": [
 		["ガブリエル", "ケルブ"]
-	]
+	],
+	"dlc": ["大天使の羽を折れ２"]
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -17840,7 +17845,8 @@ registerDemon({
 	},
 	"fusions": [
 		["ウリエル", "イグドラジル"]
-	]
+	],
+	"dlc": ["大天使の羽を折れ１"]
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -17963,7 +17969,8 @@ registerDemon({
 	},
 	"fusions": [
 		["ソロネ", "ハニエル"]
-	]
+	],
+	"dlc": ["大天使の羽を折れ１"]
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -22511,7 +22518,8 @@ registerDemon({
 	},
 	"fusions": [
 		["アスモデウス", "ミカエル", "ミトラス"]
-	]
+	],
+	"dlc": ["大天使の羽を折れ１", "大天使の羽を折れ２"]
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
