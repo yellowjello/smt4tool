@@ -1,3 +1,4 @@
+// Data from https://github.com/aqiu384/megaten-fusion-tool
 referenceDemons = {
   "Abaddon": {
     "lvl": 64,
@@ -18040,7 +18041,8 @@ registerDemon({
 		"怪力乱神": 0,
 		"地獄のマスク": 0,
 		"コロシの愉悦": 57
-	}
+	},
+	"fusions": []
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -18078,7 +18080,8 @@ registerDemon({
 		"メディアラハン": 0,
 		"アムリタ": 87,
 		"勝利の雄叫び": 90
-	}
+	},
+	"fusions": []
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -18116,7 +18119,8 @@ registerDemon({
 		"メディラマ": 0,
 		"サマリカーム": 50,
 		"ラスタキャンディ": 52
-	}
+	},
+	"fusions": []
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -18154,7 +18158,8 @@ registerDemon({
 		"エストマソード": 0,
 		"慈愛の猛反撃": 68,
 		"物理ギガプレロマ": 69
-	}
+	},
+	"fusions": []
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -18192,7 +18197,8 @@ registerDemon({
 		"慈愛の反撃": 0,
 		"物理耐性": 44,
 		"怪力乱神": 46
-	}
+	},
+	"fusions": []
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -18272,7 +18278,8 @@ registerDemon({
 		"冥界破": 0,
 		"ラスタキャンディ": 75,
 		"火炎反射": 76
-	}
+	},
+	"fusions": []
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -18310,7 +18317,8 @@ registerDemon({
 		"猛反撃": 0,
 		"捧魂の法": 62,
 		"不屈の闘志": 63
-	}
+	},
+	"fusions": []
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -18389,7 +18397,8 @@ registerDemon({
 		"リカームドラ": 0,
 		"三分の魔脈": 81,
 		"銃吸収": 82
-	}
+	},
+	"fusions": []
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -18471,7 +18480,8 @@ registerDemon({
 		"勝利の小チャクラ": 37,
 		"三分の活泉": 40,
 		"食いしばり": 41
-	}
+	},
+	"fusions": []
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -23235,7 +23245,8 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"バインドクロー": 0,
 		"吸血": 0
-	}
+	},
+	"fusions": []
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -23272,7 +23283,8 @@ registerDemon({
 		"挑発": 0,
 		"ムドオン": 0,
 		"ブラストアロー": 45
-	}
+	},
+	"fusions": []
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.
@@ -23308,7 +23320,8 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"シバブー": 0,
 		"道具の知恵・癒": 18
-	}
+	},
+	"fusions": []
 });
 registerDemon({
 	// This is a mapping for fusion, must stay in Japanese.

@@ -32,5 +32,6 @@ registerDemon({
 		// This is a mapping for skill information, must stay in Japanese.
 		"シバブー": 0,
 		"道具の知恵・癒": 18
-	}
+	},
+	"fusions": []
 });

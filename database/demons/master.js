@@ -340,9 +340,9 @@ function showDemon(name) {
 
 	if(data["fusions"]) {
 		$("#demonData_fusionSection").show();
-
+		
 		var fusions = "";
-
+		
 		$.each(data.fusions, function(index, fusion) {
 			var fusionHTML = "";
 
@@ -369,6 +369,8 @@ function showDemon(name) {
 
 			fusions += fusionHTML;
 		});
+		
+		if (data.fusions.length == 0) fusions = "Can only be obtained through fusion accident";
 
 		$("#demonData_fusions").html(fusions);
 	} else {
