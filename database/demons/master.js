@@ -525,7 +525,11 @@ function demonTableHeader() {
 }
 
 function demonClicked(obj) {
-	showDemon($(obj).text());
+	var demonName = $(obj).text();
+	if (window.history && window.history.pushState) {
+		window.history.pushState({tab:"demons", section:"details", page:demonName}, demonName); 
+	}
+	showDemon(demonName);
 }
 
 function demonTableEntry(data, targetLevel) {
@@ -616,6 +620,15 @@ function showTribe(index) {
 function findAffinity() {
 	var a = $("#affinitySelectA").val();
 	var b = $("#affinitySelectB").val();
+	
+	if (window.history && window.history.pushState) {
+		window.history.pushState({tab:"demons", section:"affinity", page:{a:a, b:b}}, a+" "+b); 
+	}
+	
+	showAffinity(a, b);
+}
+
+function showAffinity(a, b) {
 	var demons = [ ];
 
 	$.each(demonByNameEN, function(name, data) {

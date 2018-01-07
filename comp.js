@@ -32,6 +32,9 @@ function addToCOMP() {
 		"skills": skills
 	});
 
+	if (window.history && window.history.pushState) {
+		window.history.pushState({tab:"comp"}, "COMP");
+	}
 	showTab("comp");
 	refleshCOMP();
 }

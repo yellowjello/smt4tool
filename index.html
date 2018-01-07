@@ -2,7 +2,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Shin Megami Tensei 4 Tool</title>
+	<title>New Shin Megami Tensei 4 Tool</title>
 	<link rel="stylesheet"
 		href="jquery/css/ui-darkness/jquery-ui-1.10.3.custom.css"/>
 	<link rel="stylesheet" href="master.css" />
@@ -24,6 +24,64 @@
 	<script src="debug.js"></script>
 -->
 	<script>
+	
+	function switchTab(name) {
+		if (window.history && window.history.pushState) {
+			if (name === "demons") {
+				window.history.pushState({tab:"demons"}, "Demons");
+			} else if (name === "skills") {
+				window.history.pushState({tab:"skills"}, "Skills");
+			} else if (name === "apps") {
+				window.history.pushState({tab:"apps"}, "Apps");
+			} else if (name === "comp") {
+				window.history.pushState({tab:"comp"}, "COMP");
+			}
+		}
+		showTab(name);
+	}
+	
+	function showTribeClicked(index) {
+		if (window.history && window.history.pushState) {
+			window.history.pushState({tab:"demons", section:"races", page:index}, index);
+		}
+		showTribe(index);
+	}
+	
+	function restoreTribeListClicked() {
+		if (window.history && window.history.pushState) {
+			window.history.pushState({tab:"demons", section:"races"}, "Demons By Race");
+		}
+		restoreTribeList();
+	}
+	
+	function restoreAffinityFilterClicked() {
+		if (window.history && window.history.pushState) {
+			window.history.pushState({tab:"demons", section:"affinity"}, "Affinity");
+		}
+		restoreAffinityFilter();
+	}
+	
+	function showAllDemonsClicked() {
+		if (window.history && window.history.pushState) {
+			window.history.pushState({tab:"demons", section:"all"}, "All Demons");
+		}
+		showAllDemons();
+	}
+	
+	function showAllSkillsClicked() {
+		if (window.history && window.history.pushState) {
+			window.history.pushState({tab:"skills", section:"all"}, "All Skills");
+		}
+		showAllSkills();
+	}
+	
+	function showAllAppsClicked() {
+		if (window.history && window.history.pushState) {
+			window.history.pushState({tab:"apps", section:"all"}, "All Apps");
+		}
+		showAllApps();
+	}
+	
 	$(document).ready(function(){
 		// Set jquery.cookie to use JSON.
 		$.cookie.json = true;
@@ -87,7 +145,7 @@
 		$.each(tribeListEN, function(index, name){
 				tribeList += "<div>";
 
-			tribeList += "<a class=\"button_up\" onClick=\"showTribe(" +
+			tribeList += "<a class=\"button_up\" onClick=\"showTribeClicked(" +
 				index + ")\">" + name + "</a>";
 
 				tribeList += "</div>";
@@ -119,6 +177,63 @@
 		}
 
 		walkthroughPage("contents", false);
+		
+		// If History API is available, use it to support navigation
+		if (window.history && window.history.pushState) {
+			// Default main page is Demon tab -> Race List
+			window.history.replaceState({tab: "demons", section:"races"}, "Demons By Race");
+			
+			// Do the routing in callback
+			window.addEventListener('popstate', function(event) {
+				var state = event.state;
+				if (state.tab === "demons") {
+					if (state.section) {
+						if (state.section === "races") {
+							if (state.page) {
+								showTribe(state.page);
+							} else {
+								restoreTribeList();
+							}
+						} else if (state.section === "all") {
+							showAllDemons();
+						} else if (state.section === "details") {
+							showDemon(state.page);
+						} else if (state.section === "affinity") {
+							if (state.page) {
+								showAffinity(state.page.a, state.page.b)
+							} else {
+								restoreAffinityFilter();
+							}
+						}
+					}
+					// Always show tab just in case
+					showTab("demons");
+				} else if (state.tab === "skills") {
+					if (state.section) {
+						if (state.section === "all") {
+							showAllSkills();
+						} else if (state.section === "details") {
+							showSkill(state.page);
+						}
+					}
+					// Always show tab just in case
+					showTab("skills");
+				} else if (state.tab === "apps") {
+					if (state.section) {
+						if (state.section === "all") {
+							showAllApps();
+						} else if (state.section === "details") {
+							showApp(state.page);
+						}
+					}
+					// Always show tab just in case
+					showTab("apps");
+				} else if (state.tab === "comp") {
+					// COMP has no sections
+					showTab("comp");
+				}
+			});
+		}
 
 		/*
 		// This test code is used to validate the demon skills.
@@ -154,16 +269,16 @@
 	</script>
 </head>
 <body>
-<div id="demonButton" class="button_down" onClick="showTab('demons');">Demons</div> <div id="skillButton" class="button_up" onClick="showTab('skills');">Skills</div> <div id="appButton" class="button_up" onClick="showTab('apps');">Apps</div> <!--<div id="walkButton" class="button_up" onClick="showTab('walkthrough');">Walkthrough</div>--> <div id="compButton" class="button_up" onClick="showTab('comp');">COMP</div>
+<div id="demonButton" class="button_down" onClick="switchTab('demons');">Demons</div> <div id="skillButton" class="button_up" onClick="switchTab('skills');">Skills</div> <div id="appButton" class="button_up" onClick="switchTab('apps');">Apps</div> <!--<div id="walkButton" class="button_up" onClick="showTab('walkthrough');">Walkthrough</div>--> <div id="compButton" class="button_up" onClick="switchTab('comp');">COMP</div>
 <hr/>
 <div id="demonTab">
 	<div class="adjusTable">
 		<div><a id="tribeListBtn" class="button_up"
-			onClick="restoreTribeList();">By Race</a></div>
+			onClick="restoreTribeListClicked();">By Race</a></div>
 		<div><a id="showAllDemonsBtn" class="button_up"
-			onClick="showAllDemons();">All Demons</a></div>
+			onClick="showAllDemonsClicked();">All Demons</a></div>
 		<div><a id="affinityFilterBtn" class="button_up"
-			onClick="restoreAffinityFilter();">Find by Affinity</a></div>
+			onClick="restoreAffinityFilterClicked();">Find by Affinity</a></div>
 		<div>
 			<label class="section" for="demonSearch">Quick Search</label>
 			<input id="demonSearch">
@@ -273,7 +388,7 @@
 <div id="skillTab">
 <div class="adjusTable">
 	<div><a id="showAllSkillsBtn" class="button_up"
-		onClick="showAllSkills();">All Skills</a></div>
+		onClick="showAllSkillsClicked();">All Skills</a></div>
 	<div><label class="section" for="skillSearch">Quick Search</label>
 	<input id="skillSearch"></div>
 </div>
@@ -385,7 +500,7 @@
 <div id="appTab">
 <div class="adjusTable">
 	<div><a id="showAllAppsBtn" class="button_up"
-		onClick="showAllApps();">All Apps</a></div>
+		onClick="showAllAppsClicked();">All Apps</a></div>
 	<div><label class="section" for="appSearch">Quick Search</label>
 	<input id="appSearch"></div>
 </div>

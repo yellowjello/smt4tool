@@ -16,7 +16,11 @@ function skillTableHeader() {
 }
 
 function skillClicked(obj) {
-	showSkill($(obj).text());
+	var skillName = $(obj).text();
+	if (window.history && window.history.pushState) {
+		window.history.pushState({tab:"skills", section:"details", page:skillName}, skillName); 
+	}
+	showSkill(skillName);
 }
 
 function registerSkill(data) {
