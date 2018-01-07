@@ -18,7 +18,8 @@ function skillTableHeader() {
 function skillClicked(obj) {
 	var skillName = $(obj).text();
 	if (window.history && window.history.pushState) {
-		window.history.pushState({tab:"skills", section:"details", page:skillName}, skillName); 
+		window.history.pushState({tab:"skills", section:"details", page:skillName}, skillName);
+		tabStates["skills"] = window.history.state;
 	}
 	showSkill(skillName);
 }

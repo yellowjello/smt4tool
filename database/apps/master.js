@@ -34,7 +34,8 @@ function appTableHeader() {
 function appClicked(obj) {
 	var appName = $(obj).text();
 	if (window.history && window.history.pushState) {
-		window.history.pushState({tab:"apps", section:"details", page:appName}, appName); 
+		window.history.pushState({tab:"apps", section:"details", page:appName}, appName);
+		tabStates["apps"] = window.history.state;
 	}
 	showApp(appName);
 }
