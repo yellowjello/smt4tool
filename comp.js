@@ -251,7 +251,11 @@ function computeFusions() {
 					html += nameHTML;
 					html += "</div>";
 
-					fuseList.push({"html": html});
+					fuseList.push({
+						"nameEN": data.nameEN,
+						"level": data.level,
+						"html": html
+					});
 				}
 			}
 		});
