@@ -280,7 +280,9 @@ function showDemon(name) {
 	
 	nameHtml = data.nameEN;
 	if ("dlc" in data) nameHtml += " <span class='dlcIndicator'>(DLC)</span>";
-
+	else if ("fusions" in data && data.fusions.length > 0) nameHtml += " <span class='specialIndicator'>(SP)</span>";
+	else if ("fusions" in data) nameHtml += " <span class='accidentIndicator'>(ACC)</span>";
+	
 	$("#demonData_name").html(nameHtml);
 	$("#demonData_tribe").text(tribeListEN[tribeListJP.indexOf(data.tribe)]);
 	$("#demonData_level").text(data.level);
@@ -525,7 +527,11 @@ function demonTableHeader() {
 }
 
 function demonClicked(obj) {
-	showDemon($(obj).text());
+	var demonName = $(obj).text();
+	if (window.history && window.history.pushState) {
+		window.history.pushState({tab:"demons", section:"details", page:demonName}, demonName); 
+	}
+	showDemon(demonName);
 }
 
 function demonTableEntry(data, targetLevel) {
@@ -541,6 +547,8 @@ function demonTableEntry(data, targetLevel) {
 	demonList += "<td><a class=\"demonLink\" onClick=\"demonClicked(this);\">" +
 		data.nameEN + "</a>";
 	if ("dlc" in data) demonList += " <span class='dlcIndicator'>(DLC)</span>";
+	else if ("fusions" in data && data.fusions.length > 0) demonList += " <span class='specialIndicator'>(SP)</span>";
+	else if ("fusions" in data) demonList += " <span class='accidentIndicator'>(ACC)</span>";
 	demonList += "</td>";
 	
 	demonList += "<td>" + data.stats.hp + "</td>";
@@ -616,6 +624,15 @@ function showTribe(index) {
 function findAffinity() {
 	var a = $("#affinitySelectA").val();
 	var b = $("#affinitySelectB").val();
+	
+	if (window.history && window.history.pushState) {
+		window.history.pushState({tab:"demons", section:"affinity", page:{a:a, b:b}}, a+" "+b); 
+	}
+	
+	showAffinity(a, b);
+}
+
+function showAffinity(a, b) {
 	var demons = [ ];
 
 	$.each(demonByNameEN, function(name, data) {

@@ -32,6 +32,9 @@ function addToCOMP() {
 		"skills": skills
 	});
 
+	if (window.history && window.history.pushState) {
+		window.history.pushState({tab:"comp"}, "COMP");
+	}
 	showTab("comp");
 	refleshCOMP();
 }
@@ -244,10 +247,15 @@ function computeFusions() {
 					var nameHTML = "<a class=\"section\">" + data.nameEN + " (" +
 						data.level + ")</a>";
 					if ("dlc" in data) nameHTML = "<span class='dlcIndicator'>" + nameHTML + "</span>";
+					else nameHTML = "<span class='specialIndicator'>" + nameHTML + "</span>";
 					html += nameHTML;
 					html += "</div>";
 
-					fuseList.push({"html": html});
+					fuseList.push({
+						"nameEN": data.nameEN,
+						"level": data.level,
+						"html": html
+					});
 				}
 			}
 		});

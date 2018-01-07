@@ -32,7 +32,11 @@ function appTableHeader() {
 }
 
 function appClicked(obj) {
-	showApp($(obj).text());
+	var appName = $(obj).text();
+	if (window.history && window.history.pushState) {
+		window.history.pushState({tab:"apps", section:"details", page:appName}, appName); 
+	}
+	showApp(appName);
 }
 
 function registerApp(data) {
