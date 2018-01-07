@@ -429,7 +429,7 @@ function calculateFusion(a, b) {
 			var highest = { "level": 0 };
 
 			$.each(demonByNameJP, function(name, demon) {
-				if(demon.tribe == resultTribe && demon.level > highest.level)
+				if(demon.tribe == resultTribe && demon.level > highest.level && demon.fusions === undefined)
 					highest = demon;
 			});
 
