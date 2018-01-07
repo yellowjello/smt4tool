@@ -280,7 +280,9 @@ function showDemon(name) {
 	
 	nameHtml = data.nameEN;
 	if ("dlc" in data) nameHtml += " <span class='dlcIndicator'>(DLC)</span>";
-
+	else if ("fusions" in data && data.fusions.length > 0) nameHtml += " <span class='specialIndicator'>(SP)</span>";
+	else if ("fusions" in data) nameHtml += " <span class='accidentIndicator'>(ACC)</span>";
+	
 	$("#demonData_name").html(nameHtml);
 	$("#demonData_tribe").text(tribeListEN[tribeListJP.indexOf(data.tribe)]);
 	$("#demonData_level").text(data.level);
@@ -545,6 +547,8 @@ function demonTableEntry(data, targetLevel) {
 	demonList += "<td><a class=\"demonLink\" onClick=\"demonClicked(this);\">" +
 		data.nameEN + "</a>";
 	if ("dlc" in data) demonList += " <span class='dlcIndicator'>(DLC)</span>";
+	else if ("fusions" in data && data.fusions.length > 0) demonList += " <span class='specialIndicator'>(SP)</span>";
+	else if ("fusions" in data) demonList += " <span class='accidentIndicator'>(ACC)</span>";
 	demonList += "</td>";
 	
 	demonList += "<td>" + data.stats.hp + "</td>";

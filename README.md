@@ -1,6 +1,6 @@
 # SMT IV Tool
 
-This is a fork of the [original tool](https://github.com/erikku/smt4tool) created by Erikku, with bug fixes.
+This is a fork of the [original tool](https://github.com/erikku/smt4tool) created by Erikku, with bug fixes and various enhancements.
 
 ## About
 
@@ -9,7 +9,18 @@ With this tool, you can:
 
 * Learn about demons
 * Learn about skills
+* Learn about apps
 * See all the fusion combinations for your demons
+
+## Improvements
+
+I have made the following improvements in this fork:
+
+* (Hopefully) complete demon/skill/app data
+* Slightly more mobile friendly
+* Browser navigation (back, forward) support
+* Various UI enhancements
+* Various bug fixes
 
 ## Running this tool
 
@@ -23,4 +34,4 @@ Thank you [Erikku](https://github.com/erikku/), the original creator of this too
 
 I have also gotten bug fixes from rustinlee, Nephthysred, and dsyfo from their forks of the project.
 
-I have also used the fusion chart data from https://github.com/aqiu384/megaten-fusion-tool to fix errors in the original fusion chart.
+I have also used the data from https://github.com/aqiu384/megaten-fusion-tool to fix errors in the original fusion chart and demon names.
