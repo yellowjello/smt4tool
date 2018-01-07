@@ -24,15 +24,20 @@
 	<script src="debug.js"></script>
 -->
 	<script>
+	var tabStates = {
+		"demons": {tab:"demons", section:"races"},
+		"skills": {tab:"skills", section:"all"},
+		"apps": {tab:"apps", section:"all"}
+	};
 	
 	function switchTab(name) {
 		if (window.history && window.history.pushState) {
 			if (name === "demons") {
-				window.history.pushState({tab:"demons"}, "Demons");
+				window.history.pushState(tabStates["demons"], "Demons");
 			} else if (name === "skills") {
-				window.history.pushState({tab:"skills"}, "Skills");
+				window.history.pushState(tabStates["skills"], "Skills");
 			} else if (name === "apps") {
-				window.history.pushState({tab:"apps"}, "Apps");
+				window.history.pushState(tabStates["apps"], "Apps");
 			} else if (name === "comp") {
 				window.history.pushState({tab:"comp"}, "COMP");
 			}
@@ -43,6 +48,7 @@
 	function showTribeClicked(index) {
 		if (window.history && window.history.pushState) {
 			window.history.pushState({tab:"demons", section:"races", page:index}, index);
+			tabStates["demons"] = window.history.state;
 		}
 		showTribe(index);
 	}
@@ -50,6 +56,7 @@
 	function restoreTribeListClicked() {
 		if (window.history && window.history.pushState) {
 			window.history.pushState({tab:"demons", section:"races"}, "Demons By Race");
+			tabStates["demons"] = window.history.state;
 		}
 		restoreTribeList();
 	}
@@ -57,6 +64,7 @@
 	function restoreAffinityFilterClicked() {
 		if (window.history && window.history.pushState) {
 			window.history.pushState({tab:"demons", section:"affinity"}, "Affinity");
+			tabStates["demons"] = window.history.state;
 		}
 		restoreAffinityFilter();
 	}
@@ -64,6 +72,7 @@
 	function showAllDemonsClicked() {
 		if (window.history && window.history.pushState) {
 			window.history.pushState({tab:"demons", section:"all"}, "All Demons");
+			tabStates["demons"] = window.history.state;
 		}
 		showAllDemons();
 	}
@@ -71,6 +80,7 @@
 	function showAllSkillsClicked() {
 		if (window.history && window.history.pushState) {
 			window.history.pushState({tab:"skills", section:"all"}, "All Skills");
+			tabStates["skills"] = window.history.state;
 		}
 		showAllSkills();
 	}
@@ -78,6 +88,7 @@
 	function showAllAppsClicked() {
 		if (window.history && window.history.pushState) {
 			window.history.pushState({tab:"apps", section:"all"}, "All Apps");
+			tabStates["apps"] = window.history.state;
 		}
 		showAllApps();
 	}
@@ -208,6 +219,7 @@
 					}
 					// Always show tab just in case
 					showTab("demons");
+					tabStates["demons"] = window.history.state;
 				} else if (state.tab === "skills") {
 					if (state.section) {
 						if (state.section === "all") {
@@ -218,6 +230,7 @@
 					}
 					// Always show tab just in case
 					showTab("skills");
+					tabStates["skills"] = window.history.state;
 				} else if (state.tab === "apps") {
 					if (state.section) {
 						if (state.section === "all") {
@@ -228,6 +241,7 @@
 					}
 					// Always show tab just in case
 					showTab("apps");
+					tabStates["apps"] = window.history.state;
 				} else if (state.tab === "comp") {
 					// COMP has no sections
 					showTab("comp");

@@ -529,7 +529,8 @@ function demonTableHeader() {
 function demonClicked(obj) {
 	var demonName = $(obj).text();
 	if (window.history && window.history.pushState) {
-		window.history.pushState({tab:"demons", section:"details", page:demonName}, demonName); 
+		window.history.pushState({tab:"demons", section:"details", page:demonName}, demonName);
+		tabStates["demons"] = window.history.state;
 	}
 	showDemon(demonName);
 }
@@ -626,7 +627,8 @@ function findAffinity() {
 	var b = $("#affinitySelectB").val();
 	
 	if (window.history && window.history.pushState) {
-		window.history.pushState({tab:"demons", section:"affinity", page:{a:a, b:b}}, a+" "+b); 
+		window.history.pushState({tab:"demons", section:"affinity", page:{a:a, b:b}}, a+" "+b);
+		tabStates["demons"] = window.history.state;
 	}
 	
 	showAffinity(a, b);
