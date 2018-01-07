@@ -25,9 +25,9 @@ function verifyChart() {
 	// For every entry that is not element or no fusion, check reference to see if correct
 	var refRaces = referenceChart["races"];
 	var refTable = referenceChart["table"];
-	// Exclude Godly and Chaos
-	for (var i = 0; i < refRaces.length - 2; i++) {
-		for (var j = i; j < refRaces.length - 2; j++) {
+
+	for (var i = 0; i < refRaces.length; i++) {
+		for (var j = i; j < refRaces.length; j++) {
 			var raceA = refRaces[i];
 			var raceB = refRaces[j];
 			var result = refTable[i][j-i];
@@ -45,6 +45,7 @@ function verifyChart() {
 					// Fix
 					if (result === "-") fusionChart[raceAInd][raceBInd] = "-";
 					else {
+						if (isElem) result = "Element";
 						var resultInd = tribeListEN.indexOf(result);
 						if (resultInd === -1) console.log("Uh oh: " + result);
 						fusionChart[raceAInd][raceBInd] = tribeListJP[resultInd];
@@ -59,6 +60,7 @@ function verifyChart() {
 					// Fix
 					if (result === "-") fusionChart[raceBInd][raceAInd] = "-";
 					else {
+						if (isElem) result = "Element";
 						var resultInd = tribeListEN.indexOf(result);
 						if (resultInd === -1) console.log("Uh oh: " + result);
 						fusionChart[raceBInd][raceAInd] = tribeListJP[resultInd];
