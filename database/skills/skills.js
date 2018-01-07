@@ -9,7 +9,7 @@ registerSkill({
 	"hit": "Low",
 	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "Weak Phys attack. High critical rate/low hit rate. Taget: 1 enemy"
+	"effect": "Weak Phys attack. High critical rate/low hit rate. Target: 1 enemy"
 });
 
 registerSkill({
@@ -347,7 +347,7 @@ registerSkill({
 	"hit": "-",
 	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Medium physical damage and instant kill (50%). Target: All enemies"
 });
 
 registerSkill({
@@ -394,7 +394,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "閂投げ",
-	"nameEN": "Bar Toss",
+	"nameEN": "Kannuki-Throw",
 	"attribute": "Physical",
 	"cost": 35,
 	"power": "Weak",
@@ -402,13 +402,13 @@ registerSkill({
 	"kuli": "-",
 	"hit": "-",
 	"target": "Multi-enemies",
-	"strengthen": 8,
-	"effect": "-"
+	"strengthen": -1,
+	"effect": "1 to 15 hits of weak physical damage. Target: Multi-enemies"
 });
 
 registerSkill({
 	"nameJP": "烙印の一撃",
-	"nameEN": "Stigma Attack",
+	"nameEN": "Stigmata Strike",
 	"attribute": "Physical",
 	"cost": 20,
 	"power": "Heavy",
@@ -417,7 +417,7 @@ registerSkill({
 	"hit": "-",
 	"target": "Enemy",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Heavy physical damage. Inflicts brand (250%). Target: 1 enemy"
 });
 
 registerSkill({
@@ -604,7 +604,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "狂星乱舞",
-	"nameEN": "Crazed Star Dance",
+	"nameEN": "Star Tarantella",
 	"attribute": "Gun",
 	"cost": 36,
 	"power": "Heavy",
@@ -613,7 +613,7 @@ registerSkill({
 	"hit": "-",
 	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Heavy gun damage and inflicts panic (70%). Target: All enemies"
 });
 
 registerSkill({
@@ -632,7 +632,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "ナラク落とし",
-	"nameEN": "Naraku Drop",
+	"nameEN": "Fallen Grace",
 	"attribute": "Almighty",
 	"cost": 50,
 	"power": "Always 666",
@@ -640,8 +640,8 @@ registerSkill({
 	"kuli": "-",
 	"hit": "-",
 	"target": "Enemy",
-	"strengthen": 8,
-	"effect": "-"
+	"strengthen": -1,
+	"effect": "666 points of almighty damage. Bypasses all almighty resistances. Target: All enemies"
 });
 
 registerSkill({
@@ -772,7 +772,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "神の業火",
-	"nameEN": "God's Fire",
+	"nameEN": "Inferno of God",
 	"attribute": "Fire",
 	"cost": 50,
 	"power": "Heavy",
@@ -780,8 +780,8 @@ registerSkill({
 	"kuli": "-",
 	"hit": "-",
 	"target": "All enemies",
-	"strengthen": 8,
-	"effect": "-"
+	"strengthen": -1,
+	"effect": "Heavy fire damage. Bypasses all fire resistances but repel. Target: All enemies"
 });
 
 registerSkill({
@@ -921,13 +921,12 @@ registerSkill({
 	"hit": "-",
 	"target": "Multi-enemies",
 	"strengthen": -1,
-	"effect": "-",
-	"notes": "1-5 medium Ice attacks. Target: Multi-enemies"
+	"effect": "1-5 medium Ice attacks. Target: Multi-enemies"
 });
 
 registerSkill({
 	"nameJP": "神の雹撃",
-	"nameEN": "God's Blizzard",
+	"nameEN": "Hailstorm of God",
 	"attribute": "Ice",
 	"cost": 50,
 	"power": "Heavy",
@@ -935,8 +934,8 @@ registerSkill({
 	"kuli": "-",
 	"hit": "-",
 	"target": "All enemies",
-	"strengthen": 8,
-	"effect": "-"
+	"strengthen": -1,
+	"effect": "Heavy ice damage. Bypasses all ice resistances but repel. Target: All enemies"
 });
 
 registerSkill({
@@ -950,7 +949,7 @@ registerSkill({
 	"hit": "-",
 	"target": "Multi-enemies",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "1 to 8 hits of weak ice damage. Target: Multi-enemies"
 });
 
 registerSkill({
@@ -1081,7 +1080,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "神の雷光",
-	"nameEN": "God's Lightning",
+	"nameEN": "Lightning of God",
 	"attribute": "Electric",
 	"cost": 50,
 	"power": "Heavy",
@@ -1089,8 +1088,8 @@ registerSkill({
 	"kuli": "-",
 	"hit": "-",
 	"target": "All enemies",
-	"strengthen": 8,
-	"effect": "-"
+	"strengthen": -1,
+	"effect": "Heavy elec damage. Bypasses all elec resistances but repel. Target: All enemies"
 });
 
 registerSkill({
@@ -1235,7 +1234,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "神の竜巻",
-	"nameEN": "God's Tornado",
+	"nameEN": "Tornado of God",
 	"attribute": "Force",
 	"cost": 50,
 	"power": "Heavy",
@@ -1243,8 +1242,8 @@ registerSkill({
 	"kuli": "-",
 	"hit": "-",
 	"target": "All enemies",
-	"strengthen": 8,
-	"effect": "-"
+	"strengthen": -1,
+	"effect": "Heavy force damage. Bypasses all force resistances but repel. Target: All enemies"
 });
 
 registerSkill({
@@ -1306,7 +1305,7 @@ registerSkill({
 registerSkill({
 	"nameJP": "アンティクトン",
 	"nameEN": "Antichthon",
-	"attribute": "almighty",
+	"attribute": "Almighty",
 	"cost": 80,
 	"power": "Severe",
 	"hits": "1",
@@ -1336,14 +1335,14 @@ registerSkill({
 	"nameEN": "Holy Wrath",
 	"attribute": "Almighty",
 	"cost": 45,
-	"power": "Varies",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
 	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "-",
-	"notes": "Almighty attack. Target: All enemies. Effect: Varies with enemy's alignment."
+	"effect": "Almighty attack. Target: All enemies. Effect: Varies with enemy's alignment.",
+	"notes": "Chaos target takes 50% more damage."
 });
 
 registerSkill({
@@ -1351,14 +1350,14 @@ registerSkill({
 	"nameEN": "Judgement",
 	"attribute": "Almighty",
 	"cost": 45,
-	"power": "Varies",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
 	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "-",
-	"notes": "Almighty attack. Target: All enemies. Effect: Varies with enemy's alignment."
+	"effect": "Almighty attack. Target: All enemies. Effect: Varies with enemy's alignment.",
+	"notes": "Neutral target takes 50% more damage."
 });
 
 registerSkill({
@@ -1366,13 +1365,14 @@ registerSkill({
 	"nameEN": "Sea of Chaos",
 	"attribute": "Almighty",
 	"cost": 45,
-	"power": "Varies",
+	"power": "Medium",
 	"hits": "1",
 	"kuli": "-",
 	"hit": "-",
 	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "Almighty attack. Target: All enemies. Effect: Varies with enemy's alignment."
+	"effect": "Almighty attack. Target: All enemies. Effect: Varies with enemy's alignment.",
+	"notes": "Law target takes 50% more damage."
 });
 
 registerSkill({
@@ -1413,13 +1413,13 @@ registerSkill({
 	"kuli": "-",
 	"hit": "-",
 	"target": "All enemies",
-	"strengthen": 8,
-	"effect": "-"
+	"strengthen": -1,
+	"effect": "Heavy almighty damage and inflicts poison (70%). Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "輝ける烙印",
-	"nameEN": "Shining Seal",
+	"nameEN": "Stigmatic Gleam",
 	"attribute": "Almighty",
 	"cost": 75,
 	"power": "Heavy",
@@ -1428,12 +1428,12 @@ registerSkill({
 	"hit": "-",
 	"target": "All enemies",
 	"strengthen": 8,
-	"effect": "-"
+	"effect": "Heavy almighty damage and inflicts brand (20%). Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "地母の晩餐",
-	"nameEN": "Mother Earth's Feast",
+	"nameEN": "Gaea Rage",
 	"attribute": "Almighty",
 	"cost": 62,
 	"power": "Heavy",
@@ -1441,8 +1441,8 @@ registerSkill({
 	"kuli": "-",
 	"hit": "-",
 	"target": "All enemies",
-	"strengthen": 8,
-	"effect": "DLC skill (not out yet)"
+	"strengthen": -1,
+	"effect": "Heavy almighty damage. Target: All enemies"
 });
 
 registerSkill({
@@ -1574,7 +1574,7 @@ registerSkill({
 registerSkill({
 	"nameJP": "死んでくれる？",
 	"nameEN": "Die for Me!",
-	"attribute": "curse",
+	"attribute": "Curse",
 	"cost": 45,
 	"power": "Special",
 	"hits": "1",
@@ -1756,7 +1756,7 @@ registerSkill({
 registerSkill({
 	"nameJP": "サマリカーム",
 	"nameEN": "Samarecarm",
-	"attribute": "heal",
+	"attribute": "Recovery",
 	"cost": 40,
 	"power": "-",
 	"hits": "1",
@@ -1840,7 +1840,7 @@ registerSkill({
 registerSkill({
 	"nameJP": "シェオルの蛇",
 	"nameEN": "Serpent of Sheol",
-	"attribute": "almighty",
+	"attribute": "Almighty",
 	"cost": 45,
 	"power": "-",
 	"hits": "1",
@@ -1848,7 +1848,7 @@ registerSkill({
 	"hit": "-",
 	"target": "All enemies",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Drains great amount of HP and MP. Target: All enemies"
 });
 
 registerSkill({
@@ -1993,16 +1993,17 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "咳き込み",
-	"nameEN": "Coughing Fit",
+	"nameEN": "Cough",
 	"attribute": "Curse",
-	"cost": -1,
+	"cost": 4,
 	"power": "-",
-	"hits": "1",
+	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
 	"target": "Enemy",
 	"strengthen": -1,
-	"effect": "Inflicts the Cold ailment. Target: 1 enemy"
+	"effect": "Inflicts the Sick ailment. Target: 1 enemy",
+	"notes": "90% chance"
 });
 
 registerSkill({
@@ -2035,16 +2036,16 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "受難告知",
-	"nameEN": "Announcement of Suffering",
+	"nameEN": "Lamentation",
 	"attribute": "Curse",
 	"cost": 45,
 	"power": "-",
-	"hits": "1",
+	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
 	"target": "All enemies",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "100% brand and 45% of bind, panic sleep sick or poison to all foes."
 });
 
 registerSkill({
@@ -2399,58 +2400,58 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "テトラコワース",
-	"nameEN": "Tetrakowas",
+	"nameEN": "Tetracoerce",
 	"attribute": "Support",
 	"cost": 35,
 	"power": "-",
-	"hits": "1",
+	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
 	"target": "All enemies",
-	"strengthen": -1,
-	"effect": "-"
+	"strengthen": 3,
+	"effect": "Removes physical/gun-repelling shields. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "マカラコワース",
-	"nameEN": "Makarakowas",
+	"nameEN": "Makaracoerce",
 	"attribute": "Support",
 	"cost": 35,
 	"power": "-",
-	"hits": "1",
+	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
 	"target": "All enemies",
-	"strengthen": -1,
-	"effect": "-"
+	"strengthen": 3,
+	"effect": "Removes magic-repelling shields. Target: All enemies"
 });
 
 registerSkill({
 	"nameJP": "天使長の号令",
-	"nameEN": "Archangel's Order",
+	"nameEN": "Archangel's Law",
 	"attribute": "Support",
 	"cost": 50,
 	"power": "-",
-	"hits": "1",
+	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
-	"target": "Enemy",
-	"strengthen": -1,
-	"effect": "-"
+	"target": "Ally",
+	"strengthen": 3,
+	"effect": "Bestows smirk. Cannot be cast on target with ailment."
 });
 
 registerSkill({
 	"nameJP": "霊魔集中",
-	"nameEN": "Gather Spirit Energy",
+	"nameEN": "Spiritual Focus",
 	"attribute": "Support",
 	"cost": 25,
 	"power": "-",
-	"hits": "1",
+	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
 	"target": "Self",
 	"strengthen": 3,
-	"effect": "-"
+	"effect": "Triples damage of user's next magical attack. Stacks with Concentrate."
 });
 
 registerSkill({
@@ -2459,26 +2460,26 @@ registerSkill({
 	"attribute": "Support",
 	"cost": 25,
 	"power": "-",
-	"hits": "1",
+	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
 	"target": "Self",
 	"strengthen": 3,
-	"effect": "-"
+	"effect": "Triples damage of user's next physical or gun attack. Stacks with Charge. Target: Self"
 });
 
 registerSkill({
 	"nameJP": "守護者の眼光",
-	"nameEN": "Defender's Gaze",
+	"nameEN": "Guardian's Eye",
 	"attribute": "Support",
 	"cost": 255,
 	"power": "-",
-	"hits": "1",
+	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
 	"target": "All allies",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "Grants user's party 3 blinking turn icons."
 });
 
 registerSkill({
@@ -3393,7 +3394,7 @@ registerSkill({
 
 registerSkill({
 	"nameJP": "物理貫通",
-	"nameEN": "Physical Penetrate",
+	"nameEN": "Phys Pierce",
 	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
@@ -3402,26 +3403,26 @@ registerSkill({
 	"hit": "-",
 	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "All physical attacks bypass all physical resistances but repel."
 });
 
 registerSkill({
 	"nameJP": "銃貫通",
-	"nameEN": "Gun Penetrate",
+	"nameEN": "Gun Pierce",
 	"attribute": "Passive",
-	"cost": -1,
+	"cost": 0,
 	"power": "-",
 	"hits": "-",
 	"kuli": "-",
 	"hit": "-",
 	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "All gun attacks bypass all gun resistances but repel."
 });
 
 registerSkill({
 	"nameJP": "火炎貫通",
-	"nameEN": "Fire Penetrate",
+	"nameEN": "Fire Pierce",
 	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
@@ -3430,12 +3431,12 @@ registerSkill({
 	"hit": "-",
 	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "All fire attacks bypass all fire resistances but repel."
 });
 
 registerSkill({
 	"nameJP": "氷結貫通",
-	"nameEN": "Ice Penetrate",
+	"nameEN": "Ice Pierce",
 	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
@@ -3444,12 +3445,12 @@ registerSkill({
 	"hit": "-",
 	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "All ice attacks bypass all ice resistances but repel."
 });
 
 registerSkill({
 	"nameJP": "電撃貫通",
-	"nameEN": "Elec Penetrate",
+	"nameEN": "Elec Pierce",
 	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
@@ -3458,12 +3459,12 @@ registerSkill({
 	"hit": "-",
 	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "All electric attacks bypass all electric resistances but repel."
 });
 
 registerSkill({
 	"nameJP": "衝撃貫通",
-	"nameEN": "Force Penetrate",
+	"nameEN": "Force Pierce",
 	"attribute": "Passive",
 	"cost": 0,
 	"power": "-",
@@ -3472,7 +3473,7 @@ registerSkill({
 	"hit": "-",
 	"target": "Self",
 	"strengthen": -1,
-	"effect": "-"
+	"effect": "All force attacks bypass all force resistances but repel."
 });
 
 registerSkill({
@@ -3542,7 +3543,7 @@ registerSkill({
 	"hit": "-",
 	"target": "Self",
 	"strengthen": -1,
-	"effect": "Recover a little MP after a natt;e"
+	"effect": "Recover a little MP after a battle"
 });
 
 registerSkill({
@@ -3599,4 +3600,32 @@ registerSkill({
 	"target": "Self",
 	"strengthen": -1,
 	"effect": "Recover some MP (3%) after walking a certain distance. Inactive when in the stock."
+});
+
+registerSkill({
+	"nameJP": "死亡遊戯",
+	"nameEN": "Deadly Fury",
+	"attribute": "Physical",
+	"cost": 45,
+	"power": "Heavy",
+	"hits": "1",
+	"kuli": "-",
+	"hit": "-",
+	"target": "All enemies",
+	"strengthen": 8,
+	"effect": "Heavy physical damage. Inflicts Panic (70%). Target: All enemies"
+});
+
+registerSkill({
+	"nameJP": "怨敵調伏",
+	"nameEN": "Curse Thy Enemy",
+	"attribute": "Almighty",
+	"cost": 80,
+	"power": "Heavy",
+	"hits": "1",
+	"kuli": "-",
+	"hit": "-",
+	"target": "All enemies",
+	"strengthen": -1,
+	"effect": "Heavy almighty damage. Guarantees weakness. Target: All enemies"
 });
