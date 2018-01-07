@@ -1,7 +1,7 @@
 registerApp({
 	"name": "Skill Expansion 1",
 	"points": 20,
-	"req": ["Level 4"],
+	"req": ["Level 5"],
 	"desc": "Adds 1 skill slot for your skills."
 });
 
@@ -29,70 +29,70 @@ registerApp({
 registerApp({
 	"name": "Auto-Pinpoint",
 	"points": 30,
-	"req": ["Unknown"],
+	"req": ["Begin \"Capture the Black Samurai\""],
 	"desc": "Allows for automatic targeting of enemy weaknesses in Auto-Battle."
 });
 
 registerApp({
 	"name": "Demon Analyze",
 	"points": 20,
-	"req": ["app:Scout"],
+	"req": ["N/A"],
 	"desc": "Installs a function that allows you to view enemy demon's abilities."
 });
 
 registerApp({
 	"name": "HP Recovery 1",
 	"points": 35,
-	"req": ["Unknown"],
+	"req": ["Complete \"Training Exercise II\"", "Level 10"],
 	"desc": "Regenerates your HP while walking."
 });
 
 registerApp({
 	"name": "HP Recovery 2",
 	"points": 35,
-	"req": ["app:HP Recovery 1"],
+	"req": ["app:HP Recovery 1", "Level 20"],
 	"desc": "Regenerates your HP while walking."
 });
 
 registerApp({
 	"name": "Party HP Recovery",
 	"points": 65,
-	"req": ["app:HP Recovery 2"],
+	"req": ["app:HP Recovery 2", "Level 30"],
 	"desc": "Regenerates HP for the party while walking."
 });
 
 registerApp({
 	"name": "MP Recovery 1",
 	"points": 40,
-	"req": ["Unknown"],
+	"req": ["Complete \"Training Exercise II\"", "Level 10"],
 	"desc": "Regenerates your MP while walking."
 });
 
 registerApp({
 	"name": "MP Recovery 2",
 	"points": 40,
-	"req": ["app:MP Recovery 1"],
+	"req": ["app:MP Recovery 1", "Level 20"],
 	"desc": "Regenerates your MP while walking."
 });
 
 registerApp({
 	"name": "Party MP Recovery",
 	"points": 70,
-	"req": ["app:MP Recovery 2"],
+	"req": ["app:MP Recovery 2", "Level 30"],
 	"desc": "Regenerates MP for the party while walking."
 });
 
 registerApp({
 	"name": "Mapper",
 	"points": 1,
-	"req": ["Complete Training Exercise II"],
+	"req": ["Complete \"Training Exercise II\""],
 	"desc": "Installs a function that allows you to view enemy demon's abilities."
 });
 
 registerApp({
 	"name": "Expand Stock 1",
 	"points": 5,
-	"req": ["Unknown"],
+	"req": ["Level 5"],
 	"desc": "Adds 1 slot to your demon stock."
 });
 
@@ -133,14 +133,14 @@ registerApp({
 
 registerApp({
 	"name": "Expand Stock 7",
-	"points": 7,
+	"points": 6,
 	"req": ["app:Expand Stock 6"],
 	"desc": "Adds 1 slot to your demon stock."
 });
 
 registerApp({
 	"name": "Expand Stock 8",
-	"points": 7,
+	"points": 6,
 	"req": ["app:Expand Stock 7"],
 	"desc": "Adds 1 slot to your demon stock."
 });
@@ -202,22 +202,43 @@ registerApp({
 });
 
 registerApp({
-	"name": "Skill Smother 1",
+	"name": "Skill Smoother 1",
 	"points": 20,
-	"req": ["app:Scout"],
+	"req": ["N/A"],
+	"desc": "Decreases the MP cost of demon's skills by 1."
+});
+
+registerApp({
+	"name": "Skill Smoother 2",
+	"points": 20,
+	"req": ["app:Skill Smoother 1"],
+	"desc": "Decreases the MP cost of demon's skills by 1."
+});
+
+registerApp({
+	"name": "Skill Smoother 3",
+	"points": 35,
+	"req": ["app:Skill Smoother 2"],
+	"desc": "Decreases the MP cost of demon's skills by 1."
+});
+
+registerApp({
+	"name": "Skill Smoother 4",
+	"points": 35,
+	"req": ["app:Skill Smoother 3"],
 	"desc": "Decreases the MP cost of demon's skills by 1."
 });
 
 registerApp({
 	"name": "Demon Skill+1",
 	"points": 20,
-	"req": ["Unknown"],
+	"req": ["Level 5"],
 	"desc": "Adds 1 skill slot for your demons."
 });
 
 registerApp({
 	"name": "Demon Skill+2",
-	"points": 25,
+	"points": 30,
 	"req": ["app:Demon Skill+1"],
 	"desc": "Adds 1 skill slot for your demons."
 });
@@ -230,58 +251,65 @@ registerApp({
 });
 
 registerApp({
+	"name": "Demon Skill+4",
+	"points": 40,
+	"req": ["app:Demon Skill+3"],
+	"desc": "Adds 1 skill slot for your demons."
+});
+
+registerApp({
 	"name": "Demon Enhancer: St",
 	"points": 25,
-	"req": ["Unknown"],
+	"req": ["app:Demon Skill+1"],
 	"desc": "Demons gain 1 more St than usual when leveling up."
 });
 
 registerApp({
 	"name": "Demon Enhancer: Dx",
 	"points": 25,
-	"req": ["Unknown"],
+	"req": ["app:Demon Skill+1"],
 	"desc": "Demons gain 1 more Dx than usual when leveling up."
 });
 
 registerApp({
 	"name": "Demon Enhancer: Ma",
 	"points": 25,
-	"req": ["Unknown"],
+	"req": ["app:Demon Skill+1"],
 	"desc": "Demons gain 1 more Ma than usual when leveling up."
 });
 
 registerApp({
 	"name": "Demon Enhancer: Ag",
 	"points": 25,
-	"req": ["Unknown"],
+	"req": ["app:Demon Skill+1"],
 	"desc": "Demons gain 1 more Ag than usual when leveling up."
 });
 
 registerApp({
 	"name": "Demon Enhancer: Lu",
 	"points": 25,
-	"req": ["Unknown"],
+	"req": ["app:Demon Skill+1"],
 	"desc": "Demons gain 1 more Lu than usual when leveling up."
 });
 
 registerApp({
 	"name": "Skill Augment",
 	"points": 60,
-	"req": ["Unknown"],
+	"req": ["Meet Hikaru in Shinjuku"],
 	"desc": "Makes skills mutate."
 });
 
 registerApp({
 	"name": "Gift Augment",
 	"points": 45,
-	"req": ["Unknown"],
+	"req": ["Meet Hikaru in Shinjuku"],
 	"desc": "Improves the quality of gifts you receive from your demons."
 });
 
 registerApp({
 	"name": "Scout",
 	"points": 1,
-	"req": ["Complete Training Exercise I"],
+	"req": ["Complete \"Training Exercise I\""],
 	"desc": "Adds a talk skill to recruit demons during battle."
 });
 
@@ -321,6 +349,13 @@ registerApp({
 });
 
 registerApp({
+	"name": "Skills Plugin",
+	"points": 30,
+	"req": ["app:Stats Plugin"],
+	"desc": "Demons befriended through the Scout skill will learn new skills."
+});
+
+registerApp({
 	"name": "Trade",
 	"points": 10,
 	"req": ["app:Scout Gift"],
@@ -344,7 +379,7 @@ registerApp({
 registerApp({
 	"name": "Negotiate",
 	"points": 20,
-	"req": ["app:Scout"],
+	"req": ["N/A"],
 	"desc": "Adds a talk skill to negotiate with a cease-fire with demons."
 });
 
@@ -413,7 +448,7 @@ registerApp({
 
 registerApp({
 	"name": "Fundraise+",
-	"points": 30,
+	"points": 20,
 	"req": ["app:Fundraise"],
 	"desc": "Receive additional Macca when using the Fundraise skill."
 });
@@ -428,8 +463,29 @@ registerApp({
 registerApp({
 	"name": "Talk EXP Boost 1",
 	"points": 10,
-	"req": ["Unknown"],
+	"req": ["Begin \"To My Fellow Samurai\"", "Level 10"],
 	"desc": "Increases the EXP gained through demon conversation by 1.2x."
+});
+
+registerApp({
+	"name": "Talk EXP Boost 2",
+	"points": 15,
+	"req": ["app:Talk EXP Boost 1"],
+	"desc": "Increases the EXP gained through demon conversation by 1.4x."
+});
+
+registerApp({
+	"name": "Talk EXP Boost 3",
+	"points": 20,
+	"req": ["app:Talk EXP Boost 2"],
+	"desc": "Increases the EXP gained through demon conversation by 1.6x."
+});
+
+registerApp({
+	"name": "Talk EXP Boost 4",
+	"points": 40,
+	"req": ["app:Talk EXP Boost 3"],
+	"desc": "Increases the EXP gained through demon conversation by 1.8x."
 });
 
 registerApp({
@@ -449,48 +505,118 @@ registerApp({
 registerApp({
 	"name": "Demon Fusion Lite",
 	"points": 20,
-	"req": ["Unknown"],
+	"req": ["Begin \"Capture the Black Samurai\""],
 	"desc": "Allows for simple, 2-demon fusion during battle."
 });
 
 registerApp({
 	"name": "Fusion Booster 1",
 	"points": 40,
-	"req": ["Unknown"],
+	"req": ["Begin \"To My Fellow Samurai\""],
 	"desc": "Increases the level ceiling for fusions by 1."
+});
+
+registerApp({
+	"name": "Fusion Booster 2",
+	"points": 40,
+	"req": ["app:Fusion Booster 1"],
+	"desc": "Increases the level ceiling for fusions by 2."
+});
+
+registerApp({
+	"name": "Fusion Booster 3",
+	"points": 50,
+	"req": ["app:Fusion Booster 2"],
+	"desc": "Increases the level ceiling for fusions by 4."
+});
+
+registerApp({
+	"name": "Fusion Booster 4",
+	"points": 50,
+	"req": ["app:Fusion Booster 3"],
+	"desc": "Increases the level ceiling for fusions by 6."
+});
+
+registerApp({
+	"name": "Fusion Booster 5",
+	"points": 70,
+	"req": ["app:Fusion Booster 4"],
+	"desc": "Increases the level ceiling for fusions by 9."
+});
+
+registerApp({
+	"name": "Fusion Booster 6",
+	"points": 70,
+	"req": ["app:Fusion Booster 5"],
+	"desc": "Increases the level ceiling for fusions by 12."
+});
+
+registerApp({
+	"name": "Fusion Booster 7",
+	"points": 70,
+	"req": ["app:Fusion Booster 6"],
+	"desc": "Increases the level ceiling for fusions by 15."
+});
+
+registerApp({
+	"name": "Fusion Booster X",
+	"points": 200,
+	"req": ["app:Fusion Booster 7", "New Game Plus"],
+	"desc": "Removes the level ceiling for fusions."
 });
 
 registerApp({
 	"name": "Fusion EXP Boost 1",
 	"points": 10,
-	"req": ["Unknown"],
+	"req": ["Begin \"To My Fellow Samurai\""],
 	"desc": "Increases EXP gained through demon fusion by 1.2x."
 });
 
 registerApp({
+	"name": "Fusion EXP Boost 2",
+	"points": 15,
+	"req": ["app:Fusion EXP Boost 1"],
+	"desc": "Increases EXP gained through demon fusion by 1.5x."
+});
+
+registerApp({
+	"name": "Fusion EXP Boost 3",
+	"points": 20,
+	"req": ["app:Fusion EXP Boost 2"],
+	"desc": "Increases EXP gained through demon fusion by 2x."
+});
+
+registerApp({
+	"name": "Fusion EXP Boost 4",
+	"points": 20,
+	"req": ["app:Fusion EXP Boost 3"],
+	"desc": "Increases EXP gained through demon fusion by 3x."
+});
+
+registerApp({
 	"name": "Summon Discount 1",
-	"points": 0,
-	"req": ["Unknown"],
+	"points": 10,
+	"req": ["Begin \"Capture the Black Samurai\""],
 	"desc": "Lowers the Macca cost to summon demons from the Demon Compendium by 5%."
 });
 
 registerApp({
 	"name": "Summon Discount 2",
-	"points": 0,
+	"points": 15,
 	"req": ["app:Summon Discount 1"],
 	"desc": "Lowers the Macca cost to summon demons from the Demon Compendium by 10%."
 });
 
 registerApp({
 	"name": "Summon Discount 3",
-	"points": 0,
+	"points": 15,
 	"req": ["app:Summon Discount 2"],
 	"desc": "Lowers the Macca cost to summon demons from the Demon Compendium by 20%."
 });
 
 registerApp({
 	"name": "Summon Discount 4",
-	"points": 0,
+	"points": 40,
 	"req": ["app:Summon Discount 3"],
 	"desc": "Lowers the Macca cost to summon demons from the Demon Compendium by 50%."
 });
