@@ -153,14 +153,14 @@
 	</script>
 </head>
 <body>
-<div id="demonButton" class="button_down" onClick="showTab('demons');">Demons</div> <div id="skillButton" class="button_up" onClick="showTab('skills');">Skills</div> <div id="appButton" class="button_up" onClick="showTab('apps');">Apps</div> <div id="walkButton" class="button_up" onClick="showTab('walkthrough');">Walkthrough</div> <div id="compButton" class="button_up" onClick="showTab('comp');">COMP</div>
+<div id="demonButton" class="button_down" onClick="showTab('demons');">Demons</div> <div id="skillButton" class="button_up" onClick="showTab('skills');">Skills</div> <div id="appButton" class="button_up" onClick="showTab('apps');">Apps</div> <!--<div id="walkButton" class="button_up" onClick="showTab('walkthrough');">Walkthrough</div>--> <div id="compButton" class="button_up" onClick="showTab('comp');">COMP</div>
 <hr/>
 <div id="demonTab">
 	<div class="adjusTable">
 		<div><a id="tribeListBtn" class="button_up"
-			onClick="restoreTribeList();">Race List</a></div>
+			onClick="restoreTribeList();">By Race</a></div>
 		<div><a id="showAllDemonsBtn" class="button_up"
-			onClick="showAllDemons();">Show All</a></div>
+			onClick="showAllDemons();">All Demons</a></div>
 		<div><a id="affinityFilterBtn" class="button_up"
 			onClick="restoreAffinityFilter();">Find by Affinity</a></div>
 		<div>
@@ -207,33 +207,33 @@
 		</div>
 	</div>
 	<p id="demonData_skillsSection">
-		<a id="demonData_skillsLabel" class="button_down">Skills</a>
+		<a id="demonData_skillsLabel" class="section_big">Skills</a>
 		<a id="demonData_skills"></a>
 	</p>
 	<p id="demonData_dlcSection">
-		<a id="demonData_dlcLabel" class="button_down">Required DLC</a>
+		<a id="demonData_dlcLabel" class="section_big">Required DLC</a>
 		<a id="demonData_dlc"></a>
 	</p>
 	<p id="demonData_fusionSection">
-		<a id="demonData_fusionLabel" class="button_down">Special Fusion</a>
+		<a id="demonData_fusionLabel" class="section_big">Special Fusion</a>
 		<a id="demonData_fusions"></a>
 	</p>
 	<p id="demonData_mutateSection">
-		<a id="demonData_mutateLabel" class="button_down">Evolution</a>
+		<a id="demonData_mutateLabel" class="section_big">Evolution</a>
 		<a id="demonData_mutation"></a>
 	</p>
 	<table id="demonData_elementalTable">
-		<tr><td><a id="demonData_erthysLabel" class="button_down">Erthys</a></td><td><a id="demonData_erthys"></a></td></tr>
-		<tr><td><a id="demonData_aerosLabel" class="button_down">Aeros</a></td><td><a id="demonData_aeros"></a></td></tr>
-		<tr><td><a id="demonData_aquansLabel" class="button_down">Aquans</a></td><td><a id="demonData_aquans"></a></td></tr>
-		<tr><td><a id="demonData_flaemisLabel" class="button_down">Flaemis</a></td><td><a id="demonData_flaemis"></a></td></tr>
-		<tr><td><a id="demonData_gnomeLabel" class="button_down">Gnome</a></td><td><a id="demonData_gnome"></a></td></tr>
-		<tr><td><a id="demonData_sylphLabel" class="button_down">Sylph</a></td><td><a id="demonData_sylph"></a></td></tr>
-		<tr><td><a id="demonData_undineLabel" class="button_down">Undine</a></td><td><a id="demonData_undine"></a></td></tr>
-		<tr><td><a id="demonData_salamanderLabel" class="button_down">Salamander</a></td><td><a id="demonData_salamander"></a></td></tr>
+		<tr><td><a id="demonData_erthysLabel" class="section_big">Erthys</a></td><td><a id="demonData_erthys"></a></td></tr>
+		<tr><td><a id="demonData_aerosLabel" class="section_big">Aeros</a></td><td><a id="demonData_aeros"></a></td></tr>
+		<tr><td><a id="demonData_aquansLabel" class="section_big">Aquans</a></td><td><a id="demonData_aquans"></a></td></tr>
+		<tr><td><a id="demonData_flaemisLabel" class="section_big">Flaemis</a></td><td><a id="demonData_flaemis"></a></td></tr>
+		<tr><td><a id="demonData_gnomeLabel" class="section_big">Gnome</a></td><td><a id="demonData_gnome"></a></td></tr>
+		<tr><td><a id="demonData_sylphLabel" class="section_big">Sylph</a></td><td><a id="demonData_sylph"></a></td></tr>
+		<tr><td><a id="demonData_undineLabel" class="section_big">Undine</a></td><td><a id="demonData_undine"></a></td></tr>
+		<tr><td><a id="demonData_salamanderLabel" class="section_big">Salamander</a></td><td><a id="demonData_salamander"></a></td></tr>
 	</table>
 	<p id="demonData_elementResultSection">
-		<a id="demonData_elementResultLabel" class="button_down">Resulting Elemental</a>
+		<a id="demonData_elementResultLabel" class="section_big">Resulting Elemental</a>
 		<a id="demonData_elementResult" alt="When fusing two demons of this tibe, this is the result."></a>
 	</p>
 	<div id="demonReverse"></div>
@@ -272,7 +272,7 @@
 <div id="skillTab">
 <p>
 	<a id="showAllSkillsBtn" class="button_up"
-		onClick="showAllSkills();">Show All</a>
+		onClick="showAllSkills();">All Skills</a>
 	<label class="section" for="skillSearch">Quick Search</label>
 	<input id="skillSearch">
 </p>
@@ -384,7 +384,7 @@
 <div id="appTab">
 <p>
 	<a id="showAllAppsBtn" class="button_up"
-		onClick="showAllApps();">Show All</a>
+		onClick="showAllApps();">All Apps</a>
 	<label class="section" for="appSearch">Quick Search</label>
 	<input id="appSearch">
 </p>
