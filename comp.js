@@ -310,7 +310,7 @@ function computeFusions() {
 	});
 
 	if(html.length) {
-		html = "<p><a class=\"button_up\">Possible Fusions</a></p>" + html;
+		html = "<p><a class=\"button_up\">Possible Fusions</a></p><p>Select to perform fusion:</p>" + html;
 	}
 
 	return html;
@@ -328,8 +328,12 @@ function computeReverseFusions(targetName, components, resultIndex) {
 			var result = calculateFusion(components[a], components[b]);
 
 			if(result !== undefined && result.nameEN == targetName) {
-				fuseList.push(renderReverseFusion(result,
-					components[a], components[b], resultIndex));
+				fuseList.push({
+					c1:{level: components[a].level, nameEN: components[a].nameEN},
+					c2:{level: components[b].level, nameEN: components[b].nameEN},
+					html: renderReverseFusion(result,
+					components[a], components[b], resultIndex)
+				});
 			}
 		}
 	}
@@ -585,6 +589,7 @@ function compSelectSkills(index) {
 		resizable: false,
 		height: 300,
 		modal: true,
+		width: "auto",
 		buttons: {
 			"Finish Demon": function() {
 				var count = 0
@@ -606,6 +611,9 @@ function compSelectSkills(index) {
 		      		$(this).dialog("close");
 	      		}
 			}
+		},
+		create: function(e,ui) {
+			$(this).css("maxWidth", "700px");
 		}
 	});
 }
@@ -645,10 +653,14 @@ function compHistory(index) {
 		resizable: false,
 		height: 380,
 		modal: true,
+		width: "auto",
 		buttons: {
 			"Cancel": function() {
 	      		$(this).dialog("close");
 			}
+		},
+		create: function(e,ui) {
+			$(this).css("maxWidth", "700px");
 		}
 	});
 }
@@ -706,6 +718,8 @@ function compSplit(index) {
 				components, resultIndex));
 		});
 
+		// The following code also doesn't work
+		/**
 		$.each(demonByNameEN, function(nameEN, data) {
 			var components = [ ];
 
@@ -716,15 +730,29 @@ function compSplit(index) {
 
 			results = results.concat(computeReverseFusions(baseDemon.nameEN,
 				components, resultIndex));
+		});*/
+		
+		// Sort the results (c1 level and name, then c2).
+		results.sort(function(a, b) {
+			if (a.c1.level === b.c1.level) {
+				if (a.c1.nameEN === b.c1.nameEN) {
+					if (a.c2.level === b.c2.level) {
+						return a.c2.nameEN > b.c2.nameEN ? 1 : -1;
+					}
+					return a.c2.level - b.c2.level;
+				}
+				return a.c1.nameEN > b.c1.nameEN ? 1 : -1;
+			}
+			return a.c1.level - b.c1.level;
 		});
 
 		var html = "";
 
-		$.each(results, function(index, code) {
+		$.each(results, function(index, result) {
 			if(html.length)
-				html += "<br/>" + code;
+				html += "<br/>" + result.html;
 			else
-				html += code;
+				html += result.html;
 		});
 
 		$("#compSplitList").html(html);
@@ -735,10 +763,14 @@ function compSplit(index) {
 			resizable: false,
 			height: 380,
 			modal: true,
+			width: "auto",
 			buttons: {
 				"Cancel": function() {
 		      		$(this).dialog("close");
 				}
+			},
+			create: function(e,ui) {
+				$(this).css("maxWidth", "700px");
 			}
 		});
 	}
@@ -809,6 +841,7 @@ function compLevel(index) {
 		resizable: false,
 		height: 200,
 		modal: true,
+		width: "auto",
 		buttons: {
 			"Update Level": function() {
 				var baseLevel = compList[index].level;
@@ -843,6 +876,9 @@ function compLevel(index) {
 			"Cancel": function() {
 	      		$(this).dialog("close");
 			}
+		},
+		create: function(e,ui) {
+			$(this).css("maxWidth", "700px");
 		}
 	});
 
