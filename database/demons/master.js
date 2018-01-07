@@ -471,8 +471,9 @@ function renderReverseList(baseDemon) {
 			results = results.concat(computeReverseFusions(baseDemon.nameEN,
 				components));
 		});
-
-		$.each(demonByNameEN, function(nameEN, data) {
+		
+		// TODO: Investigate following code - does nothing
+		/*$.each(demonByNameEN, function(nameEN, data) {
 			var components = [ ];
 
 			if(data.tribe == "精霊" || data.tribe == baseDemon.tribe)
@@ -480,8 +481,8 @@ function renderReverseList(baseDemon) {
 
 			results = results.concat(computeReverseFusions(baseDemon.nameEN,
 				components));
-		});
-
+		});*/
+		
 		var html = "";
 
 		$.each(results, function(index, code) {
@@ -493,7 +494,7 @@ function renderReverseList(baseDemon) {
 
 		if(html.length) {
 			html = "<p><a class=\"button_up\">Fusion Combinations" +
-				"</a></p>" + html;
+				"</a></p><p>Select to add component demons to COMP:</p>" + html;
 		}
 
 		return html;

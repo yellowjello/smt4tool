@@ -310,7 +310,7 @@ function computeFusions() {
 	});
 
 	if(html.length) {
-		html = "<p><a class=\"button_up\">Possible Fusions</a></p>" + html;
+		html = "<p><a class=\"button_up\">Possible Fusions</a></p><p>Select to perform fusion:</p>" + html;
 	}
 
 	return html;
@@ -585,6 +585,7 @@ function compSelectSkills(index) {
 		resizable: false,
 		height: 300,
 		modal: true,
+		width: "auto",
 		buttons: {
 			"Finish Demon": function() {
 				var count = 0
@@ -606,6 +607,9 @@ function compSelectSkills(index) {
 		      		$(this).dialog("close");
 	      		}
 			}
+		},
+		create: function(e,ui) {
+			$(this).css("maxWidth", "700px");
 		}
 	});
 }
@@ -645,10 +649,14 @@ function compHistory(index) {
 		resizable: false,
 		height: 380,
 		modal: true,
+		width: "auto",
 		buttons: {
 			"Cancel": function() {
 	      		$(this).dialog("close");
 			}
+		},
+		create: function(e,ui) {
+			$(this).css("maxWidth", "700px");
 		}
 	});
 }
@@ -735,10 +743,14 @@ function compSplit(index) {
 			resizable: false,
 			height: 380,
 			modal: true,
+			width: "auto",
 			buttons: {
 				"Cancel": function() {
 		      		$(this).dialog("close");
 				}
+			},
+			create: function(e,ui) {
+				$(this).css("maxWidth", "700px");
 			}
 		});
 	}
@@ -809,6 +821,7 @@ function compLevel(index) {
 		resizable: false,
 		height: 200,
 		modal: true,
+		width: "auto",
 		buttons: {
 			"Update Level": function() {
 				var baseLevel = compList[index].level;
@@ -843,6 +856,9 @@ function compLevel(index) {
 			"Cancel": function() {
 	      		$(this).dialog("close");
 			}
+		},
+		create: function(e,ui) {
+			$(this).css("maxWidth", "700px");
 		}
 	});
 
