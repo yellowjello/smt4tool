@@ -10,7 +10,7 @@ tribeListJP = [
 	"邪龍", "悪霊", "外道", "幽鬼",
 	// Special
 	"フード", "魔人", "天津神", "国津神", "秘神", "屍鬼", "狂神", "英傑", "威霊",
-	"精霊", "神霊"];
+	"精霊", "神霊", "混沌王"];
 tribeListEN = [
 	// Law
 	"Herald", "Megami", "Avian", "Tree", "Divine", "Flight", "Yoma", "Nymph",
@@ -23,11 +23,11 @@ tribeListEN = [
 	"Night", "Tyrant", "Drake", "Spirit", "Foul", "Ghost",
 	// Special
 	"Food", "Fiend", "Amatsu", "Kunitsu", "Enigma", "Undead", "Zealot",
-	"Famed", "Entity", "Element", "Godly"];
+	"Famed", "Entity", "Element", "Godly", "Chaos"];
 tribeLNC = ["L", "L", "L", "L", "L", "L", "L", "L", "L", "L", "L", "N", "N",
 	"N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "C", "C", "C", "C", "C",
 	"C", "C", "C", "C", "C", "C", "C", "C", "S", "S", "S", "S", "S", "S", "S",
-	"S", "S", "S", "S"];
+	"S", "S", "S", "S", "S"];
 elementals = ["サラマンダー", "ウンディーネ", "シルフ", "ノーム", "エアロス", "アクアンズ",
 	"エアロス", "フレイミーズ", "ウンディーネ", "エアロス", "アーシーズ", "サラマンダー",
 	"ウンディーネ", "シルフ", "ノーム", "エアロス", "アーシーズ", "アーシーズ", "フレイミーズ",
@@ -130,11 +130,11 @@ reverseChart = makeReverseChart();
 function makeReverseChart() {
 	var revChart = {};
 	// initialize empty arrays
-	for (var i = 0; i < tribeListJP.length-1; i++) { // skip godly
+	for (var i = 0; i < tribeListJP.length-2; i++) { // skip chaos and godly 
 		revChart[tribeListJP[i]] = [];
 	}
-	for (var i = 0; i < tribeListJP.length-2; i++) { // skip godly and element
-		for (var j = i; j < tribeListJP.length-2; j++) {
+	for (var i = 0; i < tribeListJP.length-3; i++) { // skip chaos, godly and element 
+		for (var j = i; j < tribeListJP.length-3; j++) {
 			var result = fusionChart[i][j];
 			if (result === "-") continue;
 			var raceA = tribeListJP[i];
