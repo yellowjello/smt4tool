@@ -32,7 +32,12 @@ function appTableHeader() {
 }
 
 function appClicked(obj) {
-	var appName = $(obj).text();
+	switchToApp($(obj).text());
+}
+
+function switchToApp(appName) {
+	if(!(appName.toLowerCase() in appByNameEN))
+		return;
 	if (window.history && window.history.pushState) {
 		window.history.pushState({tab:"apps", section:"details", page:appName}, appName);
 		tabStates["apps"] = window.history.state;

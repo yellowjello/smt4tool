@@ -16,7 +16,12 @@ function skillTableHeader() {
 }
 
 function skillClicked(obj) {
-	var skillName = $(obj).text();
+	switchToSkill($(obj).text());
+}
+
+function switchToSkill(skillName) {
+	if(!(skillName.toLowerCase() in skillByNameEN))
+		return;
 	if (window.history && window.history.pushState) {
 		window.history.pushState({tab:"skills", section:"details", page:skillName}, skillName);
 		tabStates["skills"] = window.history.state;

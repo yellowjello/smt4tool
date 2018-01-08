@@ -547,6 +547,8 @@ function demonClicked(obj) {
 }
 
 function switchToDemon(demonName) {
+	if(!(demonName.toLowerCase() in demonByNameEN))
+		return;
 	if (window.history && window.history.pushState) {
 		window.history.pushState({tab:"demons", section:"details", page:demonName}, demonName);
 		tabStates["demons"] = window.history.state;
