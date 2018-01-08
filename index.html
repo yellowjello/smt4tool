@@ -120,34 +120,34 @@
 		$("#demonSearch").autocomplete({
 			source: demonNamesEN,
 			select: function(e, ui) {
-				showDemon(ui.item.value);
+				switchToDemon(ui.item.value);
 			}
 		});
 
 		$("#demonSearch").keyup(function(e){
-			showDemon($("#demonSearch").val());
+			switchToDemon($("#demonSearch").val());
 		})
 
 		$("#skillSearch").autocomplete({
 			source: skillNamesEN,
 			select: function(e, ui) {
-				showSkill(ui.item.value);
+				switchToSkill(ui.item.value);
 			}
 		});
 
 		$("#skillSearch").keyup(function(e){
-			showSkill($("#skillSearch").val());
+			switchToSkill($("#skillSearch").val());
 		})
 
 		$("#appSearch").autocomplete({
 			source: appNamesEN,
 			select: function(e, ui) {
-				showApp(ui.item.value);
+				switchToApp(ui.item.value);
 			}
 		});
 
 		$("#appSearch").keyup(function(e){
-			showApp($("#appSearch").val());
+			switchToApp($("#appSearch").val());
 		})
 
 		tribeList = "";
