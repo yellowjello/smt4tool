@@ -149,6 +149,10 @@ body {
 	text-shadow: 1px 1px 0px #6e6e6e;
 }
 
+.enabledButton {
+	cursor: pointer;
+}
+
 #demonList th a, #demonMatchList th a, #skillList th a, #appList th a,
 #walkthrough th a {
 	padding: 4px 4px;

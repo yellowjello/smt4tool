@@ -428,6 +428,7 @@ function showDemon(name) {
 	$("#demonReverse").html(renderReverseList(data));
 
 	showTab("demons");
+	scroll(0,0);
 
 	$("#showAllDemonsBtn").show();
 	$("#affinityFilterBtn").show();
@@ -542,7 +543,10 @@ function demonTableHeader() {
 }
 
 function demonClicked(obj) {
-	var demonName = $(obj).text();
+	switchToDemon($(obj).text());
+}
+
+function switchToDemon(demonName) {
 	if (window.history && window.history.pushState) {
 		window.history.pushState({tab:"demons", section:"details", page:demonName}, demonName);
 		tabStates["demons"] = window.history.state;

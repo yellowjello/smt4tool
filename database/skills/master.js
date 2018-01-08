@@ -94,6 +94,7 @@ function showSkill(name) {
 	currentSkill = data;
 
 	showTab("skills");
+	scroll(0,0);
 
 	$("#skillData_name").text(data.nameEN);
 	$("#skillData_attribute").text(data.attribute);
