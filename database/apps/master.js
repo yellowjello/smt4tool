@@ -107,6 +107,7 @@ function showApp(name) {
 	currentApp = data;
 
 	showTab("apps");
+	scroll(0,0);
 
 	$("#appData_name").text(data.name);
 	$("#appData_points").text(data.points);

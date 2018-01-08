@@ -9,6 +9,11 @@ function factorial(n) {
 		return f[n] = factorial(n - 1) * n;
 }
 
+function showDemonByNameJP(nameJP) {
+	var nameEN = demonByNameJP[nameJP].nameEN;
+	switchToDemon(nameEN);
+}
+
 function componentToCOMP(nameEN, close) {
 	if(close === undefined || close)
 		$("#compSplitDialog").dialog("close");
@@ -53,6 +58,8 @@ function renderFusion(a, b, idxA, idxB) {
 		html += "<a class=\"section\">" + result.nameEN + " (" +
 			result.level + ")</a>";
 		html += "</div>";
+		
+		html += "<a class=\"section enabledButton\" onclick=\"showDemonByNameJP('" + result.nameJP + "')\">info</a>";
 
 		// We have to be careful not to modify the base object (which is the
 		// demon data from the database!) and add the HTML to it. We must COPY
@@ -250,6 +257,8 @@ function computeFusions() {
 					else nameHTML = "<span class='specialIndicator'>" + nameHTML + "</span>";
 					html += nameHTML;
 					html += "</div>";
+					
+					html += "<a class=\"section enabledButton\" onclick=\"showDemonByNameJP('" + data.nameJP + "')\">info</a>";
 
 					fuseList.push({
 						"nameEN": data.nameEN,
