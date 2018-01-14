@@ -8,7 +8,8 @@
 	<link rel="stylesheet" href="master.css" />
 	<script src="jquery/js/jquery-1.9.1.js"></script>
 	<script src="jquery/js/jquery-ui-1.10.3.custom.js"></script>
-	<script src="jquery/js/jquery.cookie.js"></script>
+	<!--<script src="jquery/js/jquery.cookie.js"></script>-->
+	<script src="jquery/js/js.cookie.js"></script>
 	<script src="database/master.js"></script>
 	<script src="database/apps/master.js"></script>
 	<script src="database/apps/apps.js"></script>
@@ -23,7 +24,7 @@
 	<script src="database/demons/demon-reference.js"></script>
 	<script src="debug.js"></script>
 -->
-	<script>
+	<script>	
 	var tabStates = {
 		"demons": {tab:"demons", section:"races"},
 		"skills": {tab:"skills", section:"all"},
@@ -95,7 +96,7 @@
 	
 	$(document).ready(function(){
 		// Set jquery.cookie to use JSON.
-		$.cookie.json = true;
+		//$.cookie.json = true;
 
 		//fusionChartCheck();
 		//$('#reverseChartTest').text(JSON.stringify(reverseChart));
@@ -172,7 +173,7 @@
 		showAllApps();
 
 		// Load the COMP from a cookie (expires in 5 years).
-		var compData = $.cookie("comp");
+		var compData = Cookies.getJSON("comp");
 
 		// Set the COMP data if it's valid.
 		if(compData && compData.length)
