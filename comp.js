@@ -567,8 +567,8 @@ function refleshCOMP() {
 		html += "</div>";
 	});
 
-	// Save the COMP as a cookie (expires in 5 years).
-	Cookies.set("comp", compList, { expires: 365 * 5, path: '' });
+	// Save the COMP to local storage
+	window.localStorage.setItem("comp", JSON.stringify(compList));
 
 	$("#compList").html(html);
 
