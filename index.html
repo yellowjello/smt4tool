@@ -172,8 +172,18 @@
 		showAllSkills();
 		showAllApps();
 
-		// Load the COMP from a cookie (expires in 5 years).
-		var compData = Cookies.getJSON("comp");
+		// Convert cookie data (if available) to localStorage
+		var cookieData = Cookies.get("comp");
+		if (cookieData !== undefined) {
+			window.localStorage.setItem("comp", cookieData);
+			Cookies.remove("comp", { path: '' });
+		}
+		
+		try {
+			var compData = JSON.parse(window.localStorage.getItem("comp"));
+		} catch (e) {
+			var compData = [];
+		}
 
 		// Set the COMP data if it's valid.
 		if(compData && compData.length)
