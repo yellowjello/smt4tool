@@ -568,7 +568,7 @@ function refleshCOMP() {
 	});
 
 	// Save the COMP as a cookie (expires in 5 years).
-	$.cookie("comp", compList, { expires: 365 * 5 });
+	Cookies.set("comp", compList, { expires: 365 * 5 });
 
 	$("#compList").html(html);
 
